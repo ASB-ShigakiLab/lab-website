@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research | Shunsuke Shigaki</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title">Shunsuke Shigaki<small>志垣 俊介</small></div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Research</h1>
+
+  <article class="research-item">
+    <h3>Palm-Sized Quadcopter for Three-Dimensional Chemical Plume Tracking</h3>
+    <p>In this study, we designed and experimentally verified the placement of odor sensors and an algorithm using the aero-olfactory effect of a palm-sized quadcopter to solve the three-dimensional chemical plume tracking (3D-CPT) problem. Solving 3D-CPT is important in engineering as it helps perform rescue operations during disasters and identify sources of harmful substances. Moreover, the odor sensors must be properly located and a CPT algorithm be applied to improve the tracking performance of a chemical. However, studies regarding the use of quadcopters for solving the 3D-CPT problem are scarce, and the relationship between the odor sensor location and algorithm is debatable. Hence, we utilized particle image velocimetry, an airflow visualization technology, to evaluate the arrival direction of chemicals at different heights. The results showed that odor sensors must be placed on the upper and front surfaces of a quadcopter to monitor the chemicals three-dimensionally. Additionally, we designed a 3D surge-casting algorithm, which is an extension of the CPT strategy of a flying moth, that is, surge casting, to accommodate the proposed odor sensor placement. By conducting 3D-CPT experiments based on different heights of odor sources using the proposed system, we discovered that even in an environment with significant changes in the wind direction the CPT performance is better than that of the conventional 3D-CPT algorithm. Thus, 3D-CPT should be further improved to enable its application in unknown and cluttered environments. In this study, we improved the 3D-CPT performance of a palm-sized quadcopter by designing an appropriate sensor arrangement and algorithm balance.</p>
+    <p>This study was supported by Japan Keirin Autorace Foundation (JKA) through its promotion funds from AUTORACE.</p>
+    <div class="video-row">
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/vQNTD12D7_c" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/WXa9T3L76h4" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/Iew6proPVSA" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/xHTf3nWKTuQ" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </article>
+
+  <article class="research-item">
+    <h3>Multisensory-motor integration in olfactory navigation of silkmoth, Bombyx mori, using virtual reality system</h3>
+    <figure>
+      <img src="assets/images/research-vr-setup.png" alt="Virtual reality system for silkmoth olfactory navigation">
+    </figure>
+    <p>Most animals survive and thrive due to navigational behavior to reach their destinations. In order to navigate, it is important for animals to integrate information obtained from multisensory inputs and use that information to modulate their behavior. In this study, by using a virtual reality (VR) system for an insect, we investigated how the adult silkmoth integrates visual and wind direction information during female search behavior (olfactory behavior). According to the behavioral experiments using a VR system, the silkmoth had the highest navigational success rate when odor, vision, and wind information were correctly provided. However, the success rate of the search was reduced if the wind direction information provided was different from the direction actually detected. This indicates that it is important to acquire not only odor information but also wind direction information correctly. When the wind is received from the same direction as the odor, the silkmoth takes positive behavior; if the odor is detected but the wind direction is not in the same direction as the odor, the silkmoth behaves more carefully. This corresponds to a modulation of behavior according to the degree of complexity (turbulence) of the environment. We mathematically modeled the modulation of behavior using multisensory information and evaluated it using simulations. The mathematical model not only succeeded in reproducing the actual silkmoth search behavior but also improved the search success relative to the conventional odor-source search algorithm.</p>
+    <p>The behavioral data of silkworm moths measured by VR can be downloaded from the following button (published in eLife, 2021).</p>
+    <a class="btn-download" href="https://www.dropbox.com/s/mbwfs4m06l7jwal/data.zip?dl=0">VR Data Download</a>
+  </article>
+
+  <article class="research-item">
+    <h3>Wind source localization system based on palm-sized quadcopter</h3>
+    <p>In this study, we implemented a compact wind direction sensor on a palm-sized quadcopter to achieve wind source localization (WSL). We designed an anemotaxis algorithm based on the sensor data and experimentally validated its efficacy. Anemotaxis refers to the strategy of moving upwind based on wind direction information, which is essential for tracing odors propagating through the air. Despite the limited research on quadcopter systems achieving WSL directly through environmental wind measurement sensors, debate remains regarding the relationship between sensor placement and the anemotaxis algorithm. Therefore, we experimentally investigated the placement of a wind direction sensor capable of estimating wind source direction even when propellers are rotating. Our findings demonstrated that placing the sensor 50 mm away from the enclosure of the quadcopter allowed accurate wind direction measurement without being affected by wake disturbances. Additionally, we constructed the anemotaxis algorithm based on wind direction and speed data, which we integrated into the quadcopter system. We confirmed the ability of the quadcopter to execute anemotaxis behavior and achieve WSL irrespective of environmental wind strength through wind source localization experiments.</p>
+    <div class="video-row">
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/QNMRvYQCGsk" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/A4NEJ26OuGc" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/h_mF2qQthZU" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </article>
+
+  <article class="research-item">
+    <h3>A novel framework based on a data-driven approach for modeling the behavior of organisms in chemical plume tracing</h3>
+    <p>We propose a data-driven approach for modelling an organism’s behaviour instead of conventional model-based strategies in chemical plume tracing (CPT). CPT models based on this approach show promise in faithfully reproducing organisms’ CPT behaviour. To construct the data-driven CPT model, a training dataset of the odour stimuli input toward the organism is needed, along with an output of the organism’s CPT behaviour. To this end, we constructed a measurement system comprising an array of alcohol sensors for the measurement of the input and a camera for tracking the output in a real scenario. Then, we determined a transfer function describing the input–output relationship as a stochastic process by applying Gaussian process regression, and established the data-driven CPT model based on measurements of the organism’s CPT behaviour. Through CPT experiments in simulations and a real environment, we evaluated the performance of the data-driven CPT model and compared its success rate with those obtained from conventional model-based strategies. As a result, the proposed data-driven CPT model demonstrated a better success rate than those obtained from conventional model-based strategies. Moreover, we considered that the data-driven CPT model could reflect the aspect of an organism’s adaptability that modulated its behaviour with respect to the surrounding environment. However, these useful results came from the CPT experiments conducted in simple settings of simulations and a real environment. If making the condition of the CPT experiments more complex, we confirmed that the data-driven CPT model would be less effective for locating an odour source. In this way, this paper not only poses major contributions toward the development of a novel framework based on a data-driven approach for modelling an organism’s CPT behaviour, but also displays a research limitation of a data-driven approach at this stage.</p>
+    <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/yXGHwDL1bh8" loading="lazy" allowfullscreen></iframe></div>
+    <a class="btn-download" href="https://www.dropbox.com/s/y52v9q161ez99gt/Experimentsdata.zip?dl=0">Data Download</a>
+  </article>
+
+  <article class="research-item">
+    <h3>Wearable Vibration Sensor for Measuring Wing Flapping of Insect</h3>
+    <p>In this study, we fabricated a novel wearable vibration sensor for insects and measured their wing flapping. An analysis of insect wing deformation in relation to changes in the environment plays an important role in understanding the underlying mechanism enabling insects to dynamically interact with their surrounding environment. It is common to use a high-speed camera to measure the wing flapping; however, it is difficult to analyze the feedback mechanism caused by the environmental changes caused by the flapping because this method applies an indirect measurement. Therefore, we propose the fabrication of a novel film sensor that is capable of measuring the changes in the wingbeat frequency of an insect. This novel sensor is composed of flat silver particles admixed with a silicone polymer, which changes the value of the resistor when a bending deformation occurs. As a result of attaching this sensor to the wings of a moth and a dragonfly and measuring the flapping of the wings, we were able to measure the frequency of the flapping with high accuracy. In addition, as a result of simultaneously measuring the relationship between the behavior of a moth during its search for an odor source and its wing flapping, it became clear that the frequency of the flapping changed depending on the frequency of the odor reception. From this result, a wearable film sensor for an insect that can measure the displacement of the body during a particular behavior was fabricated.</p>
+    <div class="video-row">
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/ZMo5YTiPTBM" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/ZOJcS-uSmuk" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+    <a class="btn-download" href="https://www.dropbox.com/s/q124g79v3y0f0r4/MDPI_SourceCode.zip?dl=0">Source Code Download</a>
+  </article>
+
+  <article class="research-item">
+    <h3>Animal-in-the-loop system</h3>
+    <figure>
+      <img src="assets/images/research-fig1.png" alt="Concept of Animal-in-the-loop system">
+      <figcaption>図1: Concept of Animal-in-the-loop system</figcaption>
+    </figure>
+    <p>In this research, we aim to model an adaptive behavior of an animal and implement it to an autonomous robot. The conventional bio-inspired algorithm is difficult to demonstrate the ability as much as the animal because it models without considering dynamic characteristics of the robot. Therefore, in this study, we constructed an animal-in-the-loop system, which is a novel experimental system for identifying the adaptive behavior of the animal in a form that considers the dynamic characteristics of the robot to be implemented.</p>
+    <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/-xw8PyRQpAM" loading="lazy" allowfullscreen></iframe></div>
+  </article>
+
+  <article class="research-item">
+    <h3>A novel method for full locomotion compensation of an untethered walking insect</h3>
+    <figure>
+      <img src="assets/images/research-fig2.png" alt="3自由度サーボスフィア概要図">
+      <figcaption>図2: 3自由度サーボスフィア概要図</figcaption>
+    </figure>
+    <p>In this study, we developed a novel unfixed-type experimental system that we call a '3-DOF servosphere'. This system comprises one sphere and three omniwheels that support the sphere. The measurement method is very simple. An experimental animal is placed on top of the sphere. The position and heading angle of the animal are observed by using a high-speed camera installed above the sphere. Because the system can rotate the sphere with three degrees of freedom (DOFs) independently, the position and heading angle at the origin can be maintained without fixing the body. This system can be used to measure an animal's natural behavior while simultaneously providing it with precise stimuli. Moreover, electrodes can be inserted at specific sites to measure biosignals with locomotion. Therefore, this system can simultaneously measure the stimulus input-internal state-locomotion output of an animal. In this study, we focused on the chemical plume tracing (CPT) behavior of the Bombyx mori male silkworm moth in order to identify its CPT algorithm for mounting on a robot. In an experiment, we simultaneously measured the stimulus input, flight muscle electromyogram (EMG), and CPT behavior by using the 3-DOF servosphere to verify the system. We elucidated the relationship between the CPT behavior and flight muscle EMG.</p>
+    <p>生物が持つ能力をモデル化する上で，刺激入力に対する自然な状態の行動出力を計測することは重要である．また，生物は状況に応じて適応的に行動を選択するが，その発現原理を知るためには生物の内部状態である神経活動変化も行動と同時に計測する必要がある．従来の生物行動計測では，テザードシステムと呼ばれる生物の脚力を利用して自由回転可能な球体の回転量から昆虫の移動軌跡を取得する装置が用いられてきた．しかしこの装置は，生物の身体の一部を固定しなければ計測が行えないため，自然な行動出力を計測することが難しかった．</p>
+    <p>そこで，本研究では，固定具なしで刺激に対する生物の神経活動と行動を同時に計測可能な行動計測装置の構築を行った（図2）．本装置は，「3自由度サーボスフィア」と呼ばれ，球体頂上の上にいる生物の位置と姿勢を高速度カメラで取得し，その情報に基づき球体を制御することで，非拘束でありながら生物の位置と姿勢を一意に定めることができる．画像取得から球体の制御までの一連の処理を2ms以内（500Hz）に行っているため，移動速度が高速な生物に対しても十分に計測可能である．</p>
+    <p>動画では，一例としてメス探索行動を発現したカイコガの行動と筋電位情報を同時に取得したものである．</p>
+    <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/RFgfhh5EZWc" loading="lazy" allowfullscreen></iframe></div>
+  </article>
+
+  <article class="research-item">
+    <h3>Time-Varying Moth-Inspired Algorithm for Chemical Plume Tracing in Turbulent Environment</h3>
+    <figure>
+      <img src="assets/images/research-fig3.png" alt="筋電位計測箇所と行動推定結果">
+      <figcaption>図3: 筋電位計測箇所と行動推定結果</figcaption>
+    </figure>
+    <p>In this study, we propose a robust chemical plume tracing (CPT) algorithm for various environments. We developed this algorithm based on the behavior of insects that have CPT abilities globally. However, it is difficult to accurately estimate the behavior pattern from trajectory data because the trajectory contains a high level of measurement noise. We employed flight muscle electromyograms, whose motor commands were assumed to be generated in the same ganglion as the behavior, to estimate the behavior pattern using a support vector machine. By using the estimated results, we modeled the time-varying behavioral change of insects and verified the effectiveness of the phenomenon for CPT using the constructive approach. We named this time-varying CPT algorithm as time-varying moth-inspired algorithm. From the CPT experiment results using the robot, we found that the localization success rate improved by changing the behavior in a time-variant manner.</p>
+    <p>近年，工学的難問である自律移動体を用いて解決が期待されている分野に匂い源探索問題がある．匂い源探索とは，空間中に漂う匂い（化学物質）を頼りにその発生源を特定することである．匂い分布の複雑さから工学的難問とされているが，自然界の生物はその能力を普遍的に有している．そこで本研究では，匂い源探索を解決している昆虫であるカイコガ雄成虫の雌探索行動に注目した．</p>
+    <p>計測ノイズの多い軌跡データから行動変化を解析することは難しいため，行動と高い相関のある飛翔筋活動電位変化から匂い刺激に対する行動変化を推定した．推定には未学習データに対して高い識別性能を持つSupport Vector Machine（SVM）を用いた．SVMの推定値から行動解析を行った結果，カイコガは刺激の総受容回数に応じて，メスに近づく直進行動を行う時間を短くしていることがわかった．このことから，カイコガは情報量が増える探索の終盤に近づくにつれ探索の時空間解像度を向上させることで匂い源であるメスの位置の特定精度を上げているのではないかという仮説が得られた．</p>
+    <p>この傾向を数理モデル化し，地上走行型ロボットに実装して匂い源探索実験を行った結果，ロボットは従来の匂い源探索アルゴリズムより高い確率で匂い源に到達することができた．</p>
+    <p>動画は，地上走行型ロボットの実験風景を示す．匂い源の風上に扇風機を設置しており，その扇風機により匂い（エタノール）を空間中に拡散している．動画序盤の"No swing"は，扇風機の首振りをしていない環境で，動画終盤の"Swing"は扇風機の首を振ることでより複雑な環境を作り出している．</p>
+    <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/T-miNfm7Urw" loading="lazy" allowfullscreen></iframe></div>
+  </article>
+
+  <article class="research-item">
+    <h3>Design and Experimental Evaluation of an Odor Sensing Method for a Pocket-Sized Quadcopter</h3>
+    <figure>
+      <img src="assets/images/research-pocket-quadcopter.png" alt="Overview of an autonomous pocket-sized quadcopter system for CPT">
+      <figcaption>Figure: Overview of an autonomous pocket-sized quadcopter system for CPT</figcaption>
+    </figure>
+    <p>In this study, we design and verify an intake system using the wake of a pocket-sized quadcopter for the chemical plume tracing (CPT) problem. Solving CPT represents an important technique in the field of engineering because it can be used to perform rescue operations at the time of a disaster and to identify sources of harmful substances. An appropriate intake of air when sensing odors plays an important role in performing CPT. Hence, we used the air flow generated by a quadcopter itself to intake chemical particles into two alcohol sensors. By experimental evaluation, we verified that the quadcopter wake intake method has good directivity and can be used to realize CPT. Concretely, even at various odor source heights, the quadcopter had a three-dimensional CPT success rate of at least 70%. These results imply that, although a further development of three-dimensional CPT is necessary in order to conduct it in unknown and cluttered environments, the intake method proposed in this paper enables a pocket-sized quadcopter to perform three-dimensional CPT.</p>
+    <div class="video-row">
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/KHk4t_biDC0" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/o8AZ4zwUOYE" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/qLNYp02fY3U" loading="lazy" allowfullscreen></iframe></div>
+      <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/0KLzqTbYjlQ" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </article>
+
+  <article class="research-item">
+    <h3>Modeling of the Adaptive Chemical Plume Tracing Algorithm of an Insect Using Fuzzy Inference <span class="status-tag">現在進行中</span></h3>
+    <figure>
+      <img src="assets/images/research-fuzzy.png" alt="Snapshot of actual simultaneous brain (LAL)–behavior measurement experiment">
+      <figcaption>Figure: (a) Snapshot of actual simultaneous brain (LAL)–behavior measurement experiment. (b) An odor detection frequency dependent behavioral modulator implemented in a robot.</figcaption>
+    </figure>
+    <p>In this paper, we focus on the chemical plume tracing (CPT) problem, which is a known engineering challenge. In nature, animals solve the CPT by adaptively modifying their behavior according to the environment. Therefore, we propose a CPT solution method with high engineering value by modeling the CPT algorithm of an animal. In this paper, we consider a male silkworm moth as a model. To perform CPT in a turbulent environment, the adaptive selection of the behavior plays an important role. Therefore, we performed simultaneous measurement experiments involving CPT behavior of the brain and analyzed the links between the brain's neural activity and behavioral patterns. We measured the brain's neural response in the lateral accessory lobe (LAL), which generates motion commands. We employed fuzzy inference to analyze the relationship between CPT behavior and LAL neural activity. As a result of analyzing the relationship between CPT behavior and LAL, we found that the moth modulates the behavior of the state transition probability depending on the odor frequency. We modeled the obtained phenomenon and verified its effectiveness through a constructive method. As a result, the search performance was improved compared to the conventional moth algorithm.</p>
+  </article>
+
+  <article class="research-item">
+    <h3>Dynamic Model Identification for Insect Electroantennogram with Printed Electrode</h3>
+    <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/TPBj8eL10x0" loading="lazy" allowfullscreen></iframe></div>
+  </article>
+
+  <h2>Research Fields</h2>
+  <div class="field-tags">
+    <span>Bio-Inspired robotics</span>
+    <span>Control engineering</span>
+    <span>Navigation algorithms</span>
+    <span>Robotics olfaction</span>
+  </div>
+
+  <h2>Contact</h2>
+  <div class="card">
+    <p>
+      国立情報学研究所　National Institute of Informatics<br>
+      情報学プリンシプル研究系　Principles of Informatics Research Division
+    </p>
+    <p>Email: shigaki_[at]_nii.ac.jp</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>&copy; <span id="year"></span> Shunsuke Shigaki</p>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
