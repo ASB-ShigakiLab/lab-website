@@ -3,58 +3,597 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shunsuke Shigaki (志垣 俊介)</title>
-<meta name="description" content="志垣俊介（国立情報学研究所）の研究者ページ。生物のように振舞う知的ロボットシステムの実現を目指し、工学と生物学の両面から研究しています。">
-<link rel="stylesheet" href="assets/css/style.css">
+<title>Shunsuke Shigaki Lab | 志垣俊介研究室</title>
+<meta name="description" content="生物のような知的に振る舞うロボットシステムの実現を目指し、工学と生物学の両面から研究を進める志垣俊介（国立情報学研究所）の研究室サイト。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦋%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-<header class="site-header">
-  <div class="site-header-inner">
-    <div class="site-title">Shunsuke Shigaki<small>志垣 俊介</small></div>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="members.html">Members</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="links.html">Links</a></li>
-      </ul>
+<body class="lang-ja">
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 8C20 8 14 2 8 6C2 10 6 20 14 20C6 20 2 30 8 34C14 38 20 32 20 32" stroke="#d3a03c" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M20 8C20 8 26 2 32 6C38 10 34 20 26 20C34 20 38 30 32 34C26 38 20 32 20 32" stroke="#4f9187" stroke-width="1.6" stroke-linecap="round"/>
+        <line x1="20" y1="6" x2="20" y2="34" stroke="#ece7da" stroke-width="1.4"/>
+      </svg>
+      <span>Shigaki Lab</span>
+    </div>
+    <nav class="links" id="navLinks">
+      <a href="#home" class="t-ja">ホーム</a><a href="#home" class="t-en" hidden>Home</a>
+      <a href="#members" class="t-ja">メンバー</a><a href="#members" class="t-en" hidden>Members</a>
+      <a href="#publications" class="t-ja">業績</a><a href="#publications" class="t-en" hidden>Publication</a>
+      <a href="#research" class="t-ja">研究</a><a href="#research" class="t-en" hidden>Research</a>
+      <a href="#contact" class="t-ja">連絡先</a><a href="#contact" class="t-en" hidden>Contact</a>
+      <a href="#recruit" class="t-ja">募集</a><a href="#recruit" class="t-en" hidden>Recruit</a>
+      <button id="langToggle">EN</button>
     </nav>
+    <button id="navToggle" aria-label="menu">☰</button>
   </div>
 </header>
 
-<main>
-  <div class="hero">
-    <img src="assets/images/portrait.jpg" alt="Shunsuke Shigaki">
-    <div class="hero-text">
-      <h1>Shunsuke Shigaki (志垣 俊介)</h1>
-      <p class="lead">生物のような知的に振舞うことができるロボットシステムの実現を目指し，工学と生物学の両面から研究を進めています！</p>
+<!-- ============ HOME ============ -->
+<section class="hero" id="home">
+  <div class="wrap hero-inner">
+    <div>
+      <h1>志垣 俊介</h1>
+      <div class="en-name">SHUNSUKE SHIGAKI</div>
+      <p class="tagline t-ja">生物のように知的に振る舞うロボットシステムの実現を目指し、工学と生物学の両面から研究を進めています。</p>
+      <p class="tagline t-en" hidden>Working toward robotic systems that behave as intelligently as living organisms — researching insect-inspired navigation from both engineering and biology.</p>
+      <div class="affil">
+        <span class="t-ja">国立情報学研究所 情報学プリンシプル研究系 助教<br>科学技術振興機構（JST）さきがけ研究員</span>
+        <span class="t-en" hidden>Assistant Professor, Principles of Informatics Research Division,<br>National Institute of Informatics / PRESTO Researcher, JST</span>
+      </div>
+      <div class="chips">
+        <span class="chip">Bio-Inspired Robotics</span>
+        <span class="chip">Control Engineering</span>
+        <span class="chip">Navigation Algorithms</span>
+        <span class="chip">Robotic Olfaction</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+        <path class="plume" d="M330 60 C 300 90, 300 40, 270 70 C 240 100, 240 40, 210 75 C 180 110, 180 40, 150 80"/>
+        <path class="plume" d="M330 100 C 300 130, 300 80, 270 110 C 240 140, 240 80, 210 115 C 180 150, 180 80, 150 120" style="animation-delay:.5s"/>
+        <path class="flight-path" d="M40 260 L 90 230 L 70 190 L 120 175 L 100 135 L 145 120 L 130 90 L 150 80"/>
+        <circle class="source-dot" cx="150" cy="80" r="6"/>
+        <circle class="source-dot" cx="40" cy="260" r="4" fill="#ece7da" opacity="0.6"/>
+      </svg>
     </div>
   </div>
+</section>
 
-  <h2>Research Fields</h2>
-  <div class="field-tags">
-    <span>Bio-Inspired robotics</span>
-    <span>Control engineering</span>
-    <span>Navigation algorithms</span>
-    <span>Robotics olfaction</span>
+<div class="news-strip">
+  <div class="wrap">
+    <ul class="news-list">
+      <li><time>2026.04</time><span class="t-ja">文部科学大臣表彰 若手科学者賞を受賞しました（「昆虫のナビゲーション戦略の解明と実世界応用に関する研究」）。</span><span class="t-en" hidden>Received the MEXT Young Scientists' Award for research on insect navigation strategies and their real-world applications.</span></li>
+      <li><time>2026.03</time><span class="t-ja">研究成果が Tech Xplore に紹介されました。</span><span class="t-en" hidden>Our research was featured on Tech Xplore.</span></li>
+      <li><time>2025.12</time><span class="t-ja">日本比較生理生化学会にて吉田奨励賞を受賞しました。</span><span class="t-en" hidden>Received the Yoshida Encouragement Award from the Japanese Society for Comparative Physiology and Biochemistry.</span></li>
+    </ul>
   </div>
+</div>
 
-  <h2>Contact</h2>
-  <div class="card">
-    <p>
-      国立情報学研究所　National Institute of Informatics<br>
-      情報学プリンシプル研究系　Principles of Informatics Research Division
-    </p>
-    <p>Email: shigaki_[at]_nii.ac.jp</p>
+<!-- ============ MEMBERS ============ -->
+<section id="members">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow t-ja">MEMBERS</div><div class="eyebrow t-en" hidden>MEMBERS</div>
+      <h2 class="t-ja">メンバー</h2><h2 class="t-en" hidden>Members</h2>
+    </div>
+
+    <h4 class="member-group-label t-ja">Staff</h4>
+    <h4 class="member-group-label t-en" hidden>Staff</h4>
+
+    <div class="pi-card">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=370x10000:format=jpg/path/s4f915e2292247085/image/if1d1376d8edac69d/version/1673166718/image.jpg" alt="Shunsuke Shigaki">
+      <div>
+        <div class="pi-name"><a href="members/shigaki.html" class="member-link">志垣 俊介</a> <span style="font-size:0.9rem; color:var(--text-light-dim);">Shunsuke Shigaki</span></div>
+        <div class="pi-title t-ja">研究代表者 ／ 助教</div>
+        <div class="pi-title t-en" hidden>Principal Investigator / Assistant Professor</div>
+        <p class="pi-bio t-ja">国立情報学研究所 情報学プリンシプル研究系 助教。JSTさきがけ研究員。専門は生物規範ロボティクス、制御工学、ナビゲーションアルゴリズム、ロボット嗅覚。昆虫の匂い源探索行動を構成論的に解き明かし、ロボットへの実装を進めている。</p>
+        <p class="pi-bio t-en" hidden>Assistant Professor, Principles of Informatics Research Division, National Institute of Informatics, and PRESTO Researcher, JST. Works on bio-inspired robotics, control engineering, navigation algorithms, and robotic olfaction, elucidating insect odor-source-tracing behavior through a constructive approach and implementing it on robots.</p>
+        <div class="pi-contact">
+          <a href="mailto:shigaki@nii.ac.jp">shigaki [at] nii.ac.jp</a>
+          <span style="margin:0 8px; color:var(--text-light-dim);">/</span>
+          <a href="members/shigaki.html" class="t-ja">学歴・職歴・受賞歴を見る →</a><a href="members/shigaki.html" class="t-en" hidden>View education, career &amp; awards →</a>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="member-group-label t-ja" style="margin-top:40px;">Students</h4>
+    <h4 class="member-group-label t-en" hidden style="margin-top:40px;">Students</h4>
+    <div class="student-grid">
+      <div class="student-card">
+        <div class="student-avatar">関</div>
+        <div class="student-name"><a href="members/sekiwa.html" class="member-link">関和 諒子</a> <span style="font-size:0.82rem; color:var(--text-light-dim);">Ryoko Sekiwa</span></div>
+        <div class="student-role t-ja">博士課程学生<br>日本学術振興会 特別研究員（DC1）</div>
+        <div class="student-role t-en" hidden>PhD Student<br>JSPS Research Fellowship for Young Scientists (DC1)</div>
+      </div>
+    </div>
+
+    <div class="member-placeholder">
+      <span class="t-ja">その他のメンバー情報は準備中です。参加をご検討の方は「募集」セクションをご覧ください。</span>
+      <span class="t-en" hidden>Additional member profiles will be added soon. If you're interested in joining, see the Recruit section below.</span>
+    </div>
   </div>
-</main>
+</section>
 
-<footer class="site-footer">
-  <div class="site-footer-inner">
-    <p>&copy; <span id="year"></span> Shunsuke Shigaki</p>
+<!-- ============ RESEARCH ============ -->
+<section class="paper" id="research">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow t-ja">RESEARCH</div><div class="eyebrow t-en" hidden>RESEARCH</div>
+      <h2 class="t-ja">研究</h2><h2 class="t-en" hidden>Research</h2>
+      <p class="t-ja">昆虫が持つ優れた匂い源探索能力を構成論的手法で解き明かし、そこで得た知見をロボットに実装することで、生物のように環境に適応するロボットシステムの実現を目指しています。</p>
+      <p class="t-en" hidden>We use a constructive approach to uncover the remarkable odor-source-tracing abilities of insects, then implement what we learn on robots — working toward robotic systems that adapt to their environment as living organisms do.</p>
+    </div>
+
+    <div class="research-item">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=646x1024:format=png/path/s4f915e2292247085/image/i4a135fb1704b14a8/version/1548160161/image.png" alt="Palm-sized quadcopter for 3D chemical plume tracking">
+      <div>
+        <h3 class="research-title">Palm-Sized Quadcopter for Three-Dimensional Chemical Plume Tracking</h3>
+        <p class="research-text t-ja">手のひらサイズの小型ドローンによって、匂い（化学物質）の三次元的な追跡を実現する研究です。災害時の捜索や有害物質の発生源特定への応用を目指し、気流可視化（PIV）でドローン周囲の匂いの流れを解析し、最適なセンサ配置と、蛾の探索行動に着想を得た3次元サージキャスティングアルゴリズムを開発。風向が大きく変化する環境でも従来手法を上回る探索性能を確認しました。</p>
+        <p class="research-text t-en" hidden>We designed a palm-sized quadcopter that tracks chemical plumes in three dimensions — useful for disaster search-and-rescue and locating hazardous-material sources. Using particle image velocimetry, we mapped how airflow around the drone carries odor, placed sensors accordingly, and built a 3D surge-casting algorithm inspired by a moth's plume-tracing strategy. The system outperforms conventional 3D tracking even under shifting wind conditions.</p>
+        <div class="research-meta"><span style="font-family:var(--mono); font-size:0.74rem; color:var(--text-dark-dim);">Supported by JKA / AUTORACE</span></div>
+      </div>
+    </div>
+
+    <div class="research-item">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=597x10000:format=png/path/s4f915e2292247085/image/i9fad8a0074694768/version/1637761954/image.png" alt="Multisensory-motor integration in silkmoth olfactory navigation using VR">
+      <div>
+        <h3 class="research-title">Multisensory-Motor Integration in Olfactory Navigation of Silkmoth Using Virtual Reality</h3>
+        <p class="research-text t-ja">昆虫用バーチャルリアリティ（VR）システムを用い、カイコガ雄成虫が匂い・視覚・風向の情報をどのように統合してメス探索行動を行うかを調べました。三つの情報が一致する場合に探索成功率が最も高く、風向情報が実際と異なると、より慎重な行動をとることが判明。得られた知見を数理モデル化し、従来の探索アルゴリズムを上回る性能を実証しました（eLife誌, 2021年掲載）。</p>
+        <p class="research-text t-en" hidden>Using a VR system for insects, we investigated how the male silkmoth integrates odor, vision, and wind-direction cues while searching for a mate. Search success was highest when all three cues matched; conflicting wind information made the moth more cautious. We modeled this behavioral modulation and improved on conventional odor-source-search algorithms (published in <em>eLife</em>, 2021).</p>
+        <div class="research-meta"><a href="https://www.dropbox.com/s/mbwfs4m06l7jwal/data.zip?dl=0" target="_blank" rel="noopener">↓ Behavioral Data (Dropbox)</a></div>
+      </div>
+    </div>
+
+    <div class="research-item no-image">
+      <div class="research-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><path d="M3 12h4l2-8 4 16 2-8h6"/></svg>
+      </div>
+      <h3 class="research-title">Wind Source Localization System Based on a Palm-Sized Quadcopter</h3>
+      <p class="research-text t-ja">小型ドローンに風向センサを搭載し、風源定位を実現する研究です。プロペラ後流の影響を受けない最適なセンサ配置を実験的に特定し、風向・風速情報に基づく走風性アルゴリズムを構築。環境の風の強さによらず、ドローンが風源に到達できることを確認しています。</p>
+      <p class="research-text t-en" hidden>We equipped a palm-sized quadcopter with a compact wind-direction sensor to achieve wind-source localization. After identifying the sensor placement that avoids propeller-wake interference, we built an anemotaxis algorithm and confirmed the drone could localize a wind source regardless of ambient wind strength.</p>
+    </div>
+
+    <div class="research-item no-image">
+      <div class="research-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+      </div>
+      <h3 class="research-title">A Data-Driven Framework for Modeling Organisms' Chemical Plume Tracing Behavior</h3>
+      <p class="research-text t-ja">生物の匂い源探索行動を再現するため、従来のモデルベース手法に代わるデータ駆動型アプローチを提案。アルコールセンサアレイとカメラによる計測から、ガウス過程回帰で入出力関係を確率過程としてモデル化しました。単純な環境では従来手法を上回る成功率を示した一方、複雑な環境では有効性が低下することも確認しています。</p>
+      <p class="research-text t-en" hidden>We proposed a data-driven alternative to conventional model-based strategies for reproducing an organism's plume-tracing behavior, learning the input–output relationship via Gaussian-process regression from sensor-array and camera measurements. The model outperformed model-based strategies in simple settings, though its advantage narrowed in more complex environments.</p>
+      <div class="research-meta"><a href="https://www.dropbox.com/s/y52v9q161ez99gt/Experimentsdata.zip?dl=0" target="_blank" rel="noopener">↓ Experiment Data (Dropbox)</a></div>
+    </div>
+
+    <div class="research-item no-image">
+      <div class="research-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><path d="M12 2c-3 4-6 8-6 12a6 6 0 0012 0c0-4-3-8-6-12z"/></svg>
+      </div>
+      <h3 class="research-title">Wearable Vibration Sensor for Measuring Insect Wing Flapping</h3>
+      <p class="research-text t-ja">シリコーンポリマーに銀粒子を分散させた柔軟なフィルムセンサを開発し、昆虫の羽ばたき周波数を計測。ガとトンボの翅に装着した実験で高精度な計測を実現し、匂い源探索中のガの羽ばたき周波数が、匂いを感知する頻度に応じて変化することを明らかにしました。</p>
+      <p class="research-text t-en" hidden>We fabricated a flexible film sensor — silver particles in a silicone matrix — that measures an insect's wingbeat frequency from bending deformation. Attached to a moth and a dragonfly, it measured flapping with high accuracy, and revealed that a moth's wingbeat frequency shifts with how often it detects an odor while tracing a plume.</p>
+      <div class="research-meta"><a href="https://www.dropbox.com/s/q124g79v3y0f0r4/MDPI_SourceCode.zip?dl=0" target="_blank" rel="noopener">↓ Source Code (Dropbox)</a></div>
+    </div>
+
+    <div class="research-item">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=330x1024:format=png/path/s4f915e2292247085/image/i66efb16ff045f04c/version/1534732341/image.png" alt="Animal-in-the-loop system concept">
+      <div>
+        <h3 class="research-title">Animal-in-the-Loop System</h3>
+        <p class="research-text t-ja">従来の生物規範アルゴリズムは、実装先ロボットの動力学特性を考慮せずに構築されるため、生物本来の能力を再現しきれない課題がありました。本研究では、ロボットの動特性を織り込んで生物の適応行動を同定する「アニマル・インザ・ループシステム」を構築しています。</p>
+        <p class="research-text t-en" hidden>Conventional bio-inspired algorithms are typically modeled without considering the dynamic characteristics of the robot meant to implement them, limiting how well they reproduce the animal's true ability. We built an "animal-in-the-loop" experimental system that identifies adaptive animal behavior while accounting for the robot's own dynamics.</p>
+      </div>
+    </div>
+
+    <div class="research-item">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=330x1024:format=png/path/s4f915e2292247085/image/i7f44ce6932195326/version/1534732243/image.png" alt="3-DOF servosphere overview">
+      <div>
+        <h3 class="research-title">A Novel Method for Full Locomotion Compensation of an Untethered Walking Insect (3-DOF Servosphere)</h3>
+        <p class="research-text t-ja">昆虫を拘束せずに自然な行動を計測できる「3自由度サーボスフィア」を開発。高速度カメラで球体上の昆虫の位置・姿勢を取得し、その情報に基づき球体を制御することで、非拘束のまま位置を一定に保てます。行動と同時に筋電位などの生体信号を計測でき、カイコガ雄成虫の匂い源探索行動と飛翔筋活動の関係を明らかにしました。</p>
+        <p class="research-text t-en" hidden>We developed the "3-DOF servosphere," an untethered measurement system where a freely walking insect sits atop a sphere whose rotation is servo-controlled from overhead camera tracking, keeping its position fixed without restraint. This lets us measure natural locomotion together with biosignals such as flight-muscle EMG — revealing the link between a male silkmoth's plume-tracing behavior and flight-muscle activity.</p>
+      </div>
+    </div>
+
+    <div class="research-item">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=237x1024:format=png/path/s4f915e2292247085/image/id588424142faf995/version/1534732252/image.png" alt="EMG measurement points and behavior estimation results">
+      <div>
+        <h3 class="research-title">Time-Varying Moth-Inspired Algorithm for Chemical Plume Tracing in Turbulent Environments</h3>
+        <p class="research-text t-ja">軌跡データだけでは推定が難しい行動状態を、飛翔筋筋電位からサポートベクターマシンで推定。カイコガ雄成虫は匂いの受容回数が増える探索終盤ほど直進行動の時間を短くしていることがわかりました。この時変的な行動則をモデル化して地上走行ロボットに実装した結果、従来アルゴリズムより高い到達率を達成しました。</p>
+        <p class="research-text t-en" hidden>By estimating behavioral state from flight-muscle EMG using a support-vector machine, we found that male silkmoths shorten their straight upwind runs as they accumulate odor detections late in a search. We modeled this time-varying behavior and implemented it on a ground robot, which reached the odor source more reliably than a conventional algorithm.</p>
+      </div>
+    </div>
+
+    <div class="research-item">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=641x1024:format=png/path/s4f915e2292247085/image/if8e074f497c69556/version/1616494342/image.png" alt="LAL neural activity and behavior measurement">
+      <div>
+        <h3 class="research-title">Modeling the Adaptive Chemical Plume Tracing Algorithm of an Insect Using Fuzzy Inference</h3>
+        <p class="research-text t-ja">カイコガ雄成虫の運動指令を生成する脳領域（側副小葉：LAL）の神経活動と探索行動を同時計測し、ファジィ推論によって関係を解析。匂いの受容頻度に応じて行動の状態遷移確率を変化させていることを明らかにし、モデルの実装によって従来の蛾模倣アルゴリズムより高い探索性能を実現しました。<span style="opacity:.7">［現在進行中］</span></p>
+        <p class="research-text t-en" hidden>By simultaneously recording a male silkmoth's neural activity in the motor-command region (LAL) and its plume-tracing behavior, and analyzing the relationship with fuzzy inference, we found that the moth modulates its state-transition probabilities according to odor-detection frequency. The resulting model improved on the conventional moth-inspired algorithm. <span style="opacity:.7">[Ongoing]</span></p>
+      </div>
+    </div>
+
+    <div class="research-item no-image">
+      <div class="research-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
+      </div>
+      <h3 class="research-title">Dynamic Model Identification for Insect Electroantennogram with Printed Electrode</h3>
+      <p class="research-text t-ja">印刷電極を用いて昆虫の触角電位（EAG）を計測し、その動的応答特性をモデル化する研究です。ロボット嗅覚センサとしての昆虫触角の活用に向けた基盤技術に取り組んでいます。</p>
+      <p class="research-text t-en" hidden>We measure insect electroantennograms (EAG) using printed electrodes and model their dynamic response characteristics — foundational work toward using insect antennae as robotic olfactory sensors.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section class="paper" id="publications">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow t-ja">PUBLICATIONS</div><div class="eyebrow t-en" hidden>PUBLICATIONS</div>
+      <h2 class="t-ja">業績</h2><h2 class="t-en" hidden>Publications</h2>
+      <p class="t-ja">論文タイトル等は原文（主に英語）のまま掲載しています。</p>
+      <p class="t-en" hidden>Titles are listed as originally published (mostly in English).</p>
+    </div>
+
+    <details open>
+      <summary><span><span class="t-ja">国際学術論文</span><span class="t-en" hidden>International Journal Papers</span></span><span class="count">32 <span class="arrow">▸</span></span></summary>
+      <ol class="pub-list">
+        <li><strong>S. Shigaki</strong>, S. Fukushima, D. Kurabayashi, T. Sakurai, R. Kanzaki, "A novel method for full locomotion compensation of an untethered walking insect", <em>Bioinspiration &amp; Biomimetics</em>, Vol. 12, No. 1, 016005, 2016. <a href="http://iopscience.iop.org/article/10.1088/1748-3190/12/1/016005" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, T. Sakurai, N. Ando, D. Kurabayashi, R. Kanzaki, "Time-Varying Moth-Inspired Algorithm for Chemical Plume Tracing in Turbulent Environment", <em>IEEE Robotics and Automation Letters</em>, Vol. 3, No. 1, pp. 76–83, 2018. DOI: 10.1109/LRA.2017.2730361. <a href="http://ieeexplore.ieee.org/abstract/document/7987788/" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, M. R. Fikri, C. Hernandez Reyes, T. Sakurai, N. Ando, D. Kurabayashi, R. Kanzaki, H. Sezutsu, "Animal-in-the-loop system to investigate adaptive behavior", <em>Advanced Robotics</em>, Vol. 32, No. 17, pp. 945–953, 2018. DOI: 10.1080/01691864.2018.1511473. <a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2018.1511473" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, M. R. Fikri, D. Kurabayashi, "Design and experimental evaluation of odor sensing method for a pocket-sized quadcopter", <em>Sensors</em>, Vol. 18, No. 11, 3720, 2018. DOI: 10.3390/s18113720. <a href="https://www.mdpi.com/1424-8220/18/11/3720" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, S. Haigo, C. Hernandez Reyes, T. Sakurai, R. Kanzaki, D. Kurabayashi, H. Sezutsu, "Analysis of the role of wind information for efficient chemical plume tracing based on optogenetic silkworm moth behavior", <em>Bioinspiration &amp; Biomimetics</em>, Vol. 14, No. 4, 2019. DOI: 10.1088/1748-3190/ab1d34. <a href="https://iopscience.iop.org/article/10.1088/1748-3190/ab1d34" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, K. Okajima, K. Sanada, D. Kurabayashi, "Experimental Analysis of the Influence of Olfactory Property on Chemical Plume Tracing Performance", <em>IEEE Robotics and Automation Letters</em>, Vol. 4, No. 3, pp. 2847–2853, 2019. DOI: 10.1109/LRA.2019.2921948. <a href="https://ieeexplore.ieee.org/abstract/document/8733896" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, Y. Shiota, D. Kurabayashi, R. Kanzaki, "Modeling of Adaptive Chemical Plume Tracing Algorithm of Insect using Fuzzy Inference", <em>IEEE Transactions on Fuzzy Systems</em>, Vol. 28, No. 1, pp. 72–84, 2020. DOI: 10.1109/TFUZZ.2019.2915187. <a href="https://ieeexplore.ieee.org/document/8707074" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, H. Ohashi, T. Sakurai, M. Shimizu, K. Hosoda, D. Kurabayashi, "Real-Time Odor Discrimination Using Single Antenna of Insect", <em>IEEE Sensors Letters</em>, Vol. 4, No. 10, Art no. 4500904, 2020. DOI: 10.1109/LSENS.2020.3024606. <a href="https://ieeexplore.ieee.org/document/9200800" target="_blank" rel="noopener">link</a></li>
+        <li>R. Yanagisawa, <strong>S. Shigaki</strong>, et al., "Wearable Vibration Sensor for Measuring the Wing Flapping of Insects", <em>Sensors</em>, Vol. 21, No. 2, 593, 2021. DOI: 10.3390/s21020593. <a href="https://www.mdpi.com/1424-8220/21/2/593" target="_blank" rel="noopener">link</a></li>
+        <li>C. A. Hernandez-Reyes, S. Fukushima, <strong>S. Shigaki</strong>, D. Kurabayashi, T. Sakurai, R. Kanzaki, H. Sezutsu, "Identification of exploration and exploitation balance in the silkmoth olfactory search behavior by information-theoretic modeling", <em>Frontiers in Computational Neuroscience</em>, Vol. 15, No. 3, 2021. DOI: 10.3389/fncom.2021.629380. <a href="https://www.frontiersin.org/articles/10.3389/fncom.2021.629380/full" target="_blank" rel="noopener">link</a></li>
+        <li>K. Okajima, <strong>S. Shigaki</strong>, T. Suko, D. N. Luong, C. A. Hernandez-Reyes, Y. Hattori, K. Sanada, D. Kurabayashi, "A novel framework based on a data-driven approach for modeling the behavior of organisms in chemical plume tracing", <em>Journal of The Royal Society Interface</em>, Vol. 18, No. 181, 2021. DOI: 10.1098/rsif.2021.0171. <a href="https://royalsocietypublishing.org/doi/10.1098/rsif.2021.0171" target="_blank" rel="noopener">link</a></li>
+        <li>C. Hernandez-Reyes, <strong>S. Shigaki</strong>, M. Yamada, T. Kondo, D. Kurabayashi, "Learning a Generic Olfactory Search Strategy from Silk Moths by Deep Inverse Reinforcement Learning", <em>IEEE Transactions on Medical Robotics and Bionics</em>, Vol. 4, No. 1, 2022. DOI: 10.1109/TMRB.2021.3129113. <a href="https://ieeexplore.ieee.org/document/9619462" target="_blank" rel="noopener">link</a></li>
+        <li>M. Yamada, H. Ohashi, K. Hosoda, D. Kurabayashi, <strong>S. Shigaki</strong>, "Multisensory-motor integration in olfactory navigation of silkmoth, <em>Bombyx mori</em>, using virtual reality system", <em>eLife</em>, Vol. 10, e72001, 2021. DOI: 10.7554/eLife.72001. <a href="https://elifesciences.org/articles/72001" target="_blank" rel="noopener">link</a></li>
+        <li>N. Yamada, H. Ohashi, T. Umedachi, M. Shimizu, K. Hosoda, <strong>S. Shigaki</strong>, "Dynamic Model Identification for Insect Electroantennogram with Printed Electrode", <em>Sensors and Materials</em>, Vol. 33, No. 12, pp. 4173–4184, 2021. DOI: 10.18494/SAM.2021.3116. <a href="https://myukk.org/SM2017/article.php?ss=3116" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, N. Minakawa, M. Yamada, H. Ohashi, D. Kurabayashi, K. Hosoda, "Animal-in-the-loop System with Multimodal Virtual Reality to Elicit Natural Olfactory Localization Behavior", <em>Sensors and Materials</em>, Vol. 33, No. 12, pp. 4211–4228, 2021. DOI: 10.18494/SAM.2021.3609. <a href="https://myukk.org/SM2017/article.php?ss=3609" target="_blank" rel="noopener">link</a></li>
+        <li>T. Y. Chen, <strong>S. Shigaki</strong>, K. Hosoda, "Bevel-geared mechanical foot: a bioinspired robotic foot compensating yaw moment of bipedal walking", <em>Advanced Robotics</em>, Vol. 36, pp. 631–640, 2021. DOI: 10.1080/01691864.2021.2017343. <a href="https://www.tandfonline.com/doi/citedby/10.1080/01691864.2021.2017343" target="_blank" rel="noopener">link</a></li>
+        <li>K. Shirai, K. Shimamura, A. Koubara, <strong>S. Shigaki</strong>, R. Fujisawa, "Development of a behavioral trajectory measurement system (Bucket-ANTAM) for organisms moving in a two-dimensional plane", <em>Artificial Life and Robotics</em>, Vol. 27, pp. 698–705, 2022. DOI: 10.1007/s10015-022-00811-5. <a href="https://link.springer.com/article/10.1007/s10015-022-00811-5" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, Y. Yoshimura, D. Kurabayashi, K. Hosoda, "Palm-Sized Quadcopter for Three-Dimensional Chemical Plume Tracking", <em>IEEE Transactions on Instrumentation and Measurement</em>, Vol. 71, 2022. DOI: 10.1109/TIM.2022.3218316. <a href="https://ieeexplore.ieee.org/document/9933476" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, M. Yamada, D. Kurabayashi, K. Hosoda, "Robust Moth-Inspired Algorithm for Odor Source Localization Using Multimodal Information", <em>Sensors</em>, Vol. 23, No. 3, 1475, 2023. DOI: 10.3390/s23031475. <a href="https://www.mdpi.com/1424-8220/23/3/1475" target="_blank" rel="noopener">link</a></li>
+        <li>H. Ohashi, <strong>S. Shigaki</strong>, R. Teramae, M. Shimizu, K. Hosoda, "Development of Bio-cultured Artificial Muscles with High Design Flexibility", <em>Journal of Bionic Engineering</em>, Vol. 20, No. 4, 2023. DOI: 10.1007/s42235-023-00355-9. <a href="https://link.springer.com/article/10.1007/s42235-023-00355-9" target="_blank" rel="noopener">link</a></li>
+        <li>A. Koubara, K. Shirai, K. Shimamura, <strong>S. Shigaki</strong>, R. Fujisawa, "Analysis of Negative Phototaxis in the Pill-bug using Omni-directional servo-sphere", <em>Artificial Life and Robotics</em>, Vol. 28, pp. 591–599, 2023. DOI: 10.1007/s10015-023-00871-1. <a href="https://link.springer.com/article/10.1007/s10015-023-00871-1" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, N. Ando, T. Sakurai, D. Kurabayashi, "Analysis of Odor Tracking Performance of Silk moth using a Sensory-Motor Intervention System", <em>Integrative and Comparative Biology</em>, Vol. 63, No. 2, pp. 343–355, 2023. DOI: 10.1093/icb/icad055. <a href="https://academic.oup.com/icb/advance-article/doi/10.1093/icb/icad055/7191257" target="_blank" rel="noopener">link</a></li>
+        <li>T. Ibuki, S. Nakano, S. Shigaki, T. Hatanaka, "Sampled visual feedback pose estimation and regulation based on camera frame rates", <em>SICE Journal of Control, Measurement, and System Integration</em>, Vol. 16, No. 1, pp. 297–309, 2023. DOI: 10.1080/18824889.2023.2247853. <a href="https://www.tandfonline.com/doi/full/10.1080/18824889.2023.2247853" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, R. Yanagisawa, Y. Shiota, K. Hosoda, "Designing signal processing for robotic olfaction based on electroantennogram", <em>Advanced Robotics</em>, Vol. 38, No. 16, pp. 1166–1175, 2024. DOI: 10.1080/01691864.2024.2358433. <a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2024.2358433" target="_blank" rel="noopener">link</a></li>
+        <li>K. Yokota, K. Hosoda, <strong>S. Shigaki</strong>, "Wind Source Localization System Based on a Palm-Sized Quadcopter", <em>Applied Sciences</em>, Vol. 14, No. 15, 2024. <a href="https://www.mdpi.com/2076-3417/14/15/6425" target="_blank" rel="noopener">link</a></li>
+        <li>M. Kaji, K. Katano, T. I. Anee, H. Nitta, R. Yamaji, R. Shimizu, <strong>S. Shigaki</strong>, H. Suzuki, N. Suzuki, "Response of Arabidopsis thaliana to Flooding with Physical Flow", <em>Plants</em>, Vol. 13, No. 24, 3508, 2024. <a href="https://www.mdpi.com/2223-7747/13/24/3508" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, T. Matsushita, H. Ohashi, N. Ando, K. Hosoda, "Odor source localization behavior of an insect enhanced by intermittent intake strategy", <em>Advanced Robotics</em>, Vol. 39, No. 9, pp. 491–502, 2025. DOI: 10.1080/01691864.2025.2469701. <a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2025.2469701" target="_blank" rel="noopener">link</a></li>
+        <li>R. Sekiwa, T. Ibuki, <strong>S. Shigaki</strong>, "Development of Automatic Insect-Tracking Robot System for Measuring Local Activity Changes in Free Walking", <em>Frontiers in Robotics and AI</em>, Vol. 12, 1602867, 2025. <a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1602867/full" target="_blank" rel="noopener">link</a></li>
+        <li>T. S. Ohashi, Y. Y. Xu, <strong>S. Shigaki</strong>, Y. Nakamura, T. T. Lee, Y. M. Loh, E. M. Sato, D. F. Eberl, M. P. Su, A. Kamikouchi, "Diversity and complexity of auditory representation in the hearing systems of Aedes aegypti mosquitoes", <em>Science Advances</em>, Vol. 11, No. 23, eads2689, 2025. <a href="https://www.science.org/doi/full/10.1126/sciadv.ads2689" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, K. Yokota, R. Sekiwa, D. Kurabayashi, D. Owaki, "Insect-inspired adaptive behavioral compensation strategy against olfactory sensory deficiency for robotic odor source localization", <em>npj Robotics</em>, Vol. 4, No. 1, 2026. <a href="https://www.nature.com/articles/s44182-026-00080-5" target="_blank" rel="noopener">link</a></li>
+        <li>H. Ohashi, <strong>S. Shigaki</strong>, S. Fujii, M. Shimizu, K. Hosoda, "Evaluation of material effects on three-dimensional cultured skeletal muscle cells for biohybrid robots", <em>Frontiers in Robotics and AI</em>, Vol. 13, 1778864, 2026. <a href="https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1778864/full" target="_blank" rel="noopener">link</a></li>
+        <li>K. Fujii, K. Tsutsui, Y. Teshima, M. Itoh, N. Takeishi, N. Nishiumi, R. Tanaka, <strong>S. Shigaki</strong>, Y. Kawahara, "Data-driven simulator of multi-animal behavior with unknown dynamics via offline and online reinforcement learning", <em>iScience</em>, in press.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary><span><span class="t-ja">国内学術論文</span><span class="t-en" hidden>Domestic Journal Papers</span></span><span class="count">6 <span class="arrow">▸</span></span></summary>
+      <ol class="pub-list">
+        <li><strong>志垣俊介</strong>，福島俊平，峯岸諒，倉林大輔，神崎亮平，"カイコガ行動計測のための3自由度サーボスフィアの構築"，日本機械学会論文集，Vol. 80, No. 813, 2014. <a href="https://www.jstage.jst.go.jp/article/transjsme/80/813/80_2014dr0131/_article/-char/ja/" target="_blank" rel="noopener">link</a></li>
+        <li>吉原拓実，<strong>志垣俊介</strong>，倉林大輔，"化学物質探索行動における気流環境に応じた吸気積極性の実験的検討"，日本機械学会論文集，Vol. 83, No. 853, p. 17-00108, 2017. <a href="https://www.jstage.jst.go.jp/article/transjsme/advpub/0/advpub_17-00108/_article/-char/ja/" target="_blank" rel="noopener">link</a></li>
+        <li>鈴木洋之，鈴木伸洋，<strong>志垣俊介</strong>，Sim Joongeun，阿部里菜，新田大史，山次亮太朗，"流れによるストレスで生じる植物の生育および分子生物学的応答に基づく水理量推定の可能性"，土木学会論文集B1（水工学），Vol. 75, No. 1, pp. 130–137, 2019. <a href="https://www.jstage.jst.go.jp/article/jscejhe/75/1/75_130/_article/-char/ja/" target="_blank" rel="noopener">link</a></li>
+        <li>川野雄基，大槻圭一，阿部真人，永谷直久，<strong>志垣俊介</strong>，藤澤隆介，"昆虫用運動補償装置を用いたオカダンゴムシの走光性の評価"，システム制御情報学会論文誌，Vol. 33, No. 3, pp. 67–76, 2020.</li>
+        <li>岡島慶，<strong>志垣俊介</strong>，眞田一志，倉林大輔，"フリックによる可変式サンプリングを導入した自律移動ロボットによる匂い源探索"，日本機械学会論文集，Vol. 86, No. 887, pp. 19-00340, 2020. <a href="https://www.jstage.jst.go.jp/article/transjsme/86/887/86_19-00340/_pdf/-char/ja" target="_blank" rel="noopener">link</a></li>
+        <li>神原章博，富永歩，<strong>志垣俊介</strong>，林英治，藤澤隆介，"CNNの深層学習を用いた樹皮画像によるスギ・ヒノキの分類の実現"，森林利用学会誌，Vol. 36, No. 1, 2021. <a href="https://www.jstage.jst.go.jp/article/jjfes/36/1/36_36.5/_article/-char/ja" target="_blank" rel="noopener">link</a></li>
+      </ol>
+    </details>
+
+    <details>
+      <summary><span><span class="t-ja">解説記事・その他の著書</span><span class="t-en" hidden>Review Articles &amp; Book Chapters</span></span><span class="count">11 <span class="arrow">▸</span></span></summary>
+      <ol class="pub-list">
+        <li><strong>志垣俊介</strong>，倉林大輔，"カイコガの適応的匂い源探索アルゴリズムのモデル化とロボットシステムへの実装に向けて"，昆虫と自然，ニューサイエンス社，Vol. 53, No. 13, pp. 36–37, 2018.</li>
+        <li>梅舘拓也，<strong>志垣俊介</strong>，清水正宏，"自律分散システムをソフトロボットに実装する"，計測と制御，Vol. 59, No. 11, pp. 791–795, 2020. DOI: 10.11499/sicejl.59.791. <a href="https://www.jstage.jst.go.jp/article/sicejl/59/11/59_791/_article/-char/ja/" target="_blank" rel="noopener">link</a></li>
+        <li><strong>志垣俊介</strong>，"テレワーク社会を支えるリモートセンシング"，シーエムシー出版，第19章，2021.</li>
+        <li><strong>志垣俊介</strong>，"昆虫に錯覚を引き起こすことは可能か？―昆虫用VRの開発―"，AROMA RESEARCH，Vol. 23, No. 4, pp. 315–319, 2022. <a href="https://www.fragrance-j.co.jp/book/b614806.html" target="_blank" rel="noopener">link</a></li>
+        <li>N. Suzuki, <strong>S. Shigaki</strong>, M. Yunose, N. R. Putrawisesa, S. Hogaki, M. C. D. Piazza, "Mechanisms Regulating Energy Homeostasis in Plant Cells and Their Potential to Inspire Electrical Microgrids Models", <em>Biomimetics</em>, Vol. 7, No. 2, 2022. <a href="https://www.mdpi.com/2313-7673/7/2/83" target="_blank" rel="noopener">link</a></li>
+        <li><strong>S. Shigaki</strong>, N. Ando, "Usage of a Sensory-Motor Intervention System for Understanding the Adaptive Behavior of Insects", <em>Applied Sciences</em>, Vol. 14, No. 3, 1139, 2024. <a href="https://www.mdpi.com/2076-3417/14/3/1139" target="_blank" rel="noopener">link</a></li>
+        <li><strong>志垣俊介</strong>，安藤規泰，"感覚－運動介入システムによって紐解く昆虫の適応行動"，システム/制御/情報，Vol. 68, No. 4, pp. 128–133, 2024.</li>
+        <li>大脇大，<strong>志垣俊介</strong>，青沼仁志，"運動・感覚・脳への介入から紐解く昆虫の適応能"，日本ロボット学会誌，Vol. 42, No. 8, pp. 725–731, 2024.</li>
+        <li><strong>志垣俊介</strong>，大橋ひろ乃，"生物を真似・活用するロボット設計"，比較生理生化学，Vol. 41, No. 3, pp. 118–130, 2024. <a href="https://www.jscpb.org/publications/magazine/" target="_blank" rel="noopener">link</a></li>
+        <li>Y. Shiota, <strong>S. Shigaki</strong>, "Decoding olfactory mechanisms: molecular functions and robotic applications for odor source localization", Vol. 39, No. 9, pp. 472–490, 2025. <a href="https://www.tandfonline.com/doi/full/10.1080/01691864.2025.2501026" target="_blank" rel="noopener">link</a></li>
+        <li>（共同執筆）<strong>志垣俊介</strong>，"昆虫科学の最前線"，丸善出版，第19章担当，pp. 404–412, 2026. <a href="https://www.maruzen-publishing.co.jp/book/b10153261.html" target="_blank" rel="noopener">link</a></li>
+      </ol>
+    </details>
+
+    <details>
+      <summary><span><span class="t-ja">国際会議論文（査読あり）</span><span class="t-en" hidden>International Conference Papers (Refereed)</span></span><span class="count">32 <span class="arrow">▸</span></span></summary>
+      <ol class="pub-list">
+        <li>J. Y. Chew, <strong>S. Shigaki</strong>, D. Kurabayashi, "Time-Variant Chemical Plume Tracing Inspired by the Silk Moth", <em>Proc. SSRR 2014</em>, pp. 1–2, 2014.</li>
+        <li><strong>S. Shigaki</strong>, S. Fukushima, D. Kurabayashi, R. Minegishi, R. Kanzaki, "3-DOF servosphere: A novel experiment system for measuring locomotion of free walking silkworm moth", <em>Proc. SICE Annual Conference 2015</em>, pp. 1295–1298, 2015.</li>
+        <li><strong>S. Shigaki</strong>, D. Kurabayashi, "Behavior Estimation of an Insect Based on Flight Muscle Electromyograms using the Support Vector Machine", <em>Proc. SICE Annual Conference 2016</em>, pp. 1323–1328, 2016.</li>
+        <li>R. Yanagawa, <strong>S. Shigaki</strong>, D. Kurabayashi, "Construction of chemical plume tracing simulator in a non-rectifying environment", <em>Proc. SICE Annual Conference 2018</em>, pp. 147–150, 2018.</li>
+        <li>M. R. Fikri, <strong>S. Shigaki</strong>, D. Kurabayashi, "Chemical Plume Tracing using Palm-Sized Quadrotor in 2D Obstacle Environment", <em>Proc. SICE Annual Conference 2018</em>, pp. 154–157, 2018.</li>
+        <li><strong>S. Shigaki</strong>, K. Sanada, D. Kurabayashi, "Development of Omnidirectional Mobile Treadmill for Neuroethology", <em>Proc. Conference on Biomimetic and Biohybrid Systems</em>, pp. 360–364, 2019.</li>
+        <li>S. Haigou, <strong>S. Shigaki</strong>, D. Kurabayashi, "Bio-Inspired Behavior Modulation of Chemical Plume Tracing Robot based on Wind Information", <em>Proc. WROCO2019</em>, pp. 124–127, 2019.</li>
+        <li>C. Hernandez Reyes, S. Fukushima, <strong>S. Shigaki</strong>, D. Kurabayashi, "Fusion of Cognitive and Reactive Algorithms for Chemical Plume Tracing on an Autonomous Mobile Robot", <em>Proc. SICE2019</em>, pp. 264–267, 2019.</li>
+        <li>O. Matsumoto, <strong>S. Shigaki</strong>, S. Ikemoto, T. Y. Chen, M. Shimizu, K. Hosoda, "2DOF link mechanism mimicking cheetah's spine and leg movement", <em>Proc. ROBIO 2019</em>, 2019.</li>
+        <li>N. Yamada, <strong>S. Shigaki</strong>, M. Shimizu, H. Ohashi, T. Umedachi, T. Ogura, K. Hosoda, "Electroantennography Measurement by Printed Electronics Electrode", <em>Proc. IEEE/SICE SII</em>, 2020.</li>
+        <li>R. Yanagawa, K. Kurabayashi, K. Okajima, S. Shigaki, Y. Hattori, D. Kurabayashi, "Variable Capture-Angle Sampling for Chemical Plume Tracing by an Autonomous Mobile Robot", <em>Proc. IEEE/SICE SII</em>, 2020.</li>
+        <li>K. Okajima, S. Shigaki, C. Hernandez Reyes, K. Sanada, D. Kurabayashi, "Analysis of the Effect of Sampling Strategy: Flicking for Chemical Plume Tracing by an Autonomous Robot", <em>Proc. IEEE/SICE SII</em>, 2020.</li>
+        <li><strong>S. Shigaki</strong>, M. Shimizu, H. Kobayashi, R. Ishiguro, T. Umedachi, K. Hosoda, "Demonstration of Teleoperated Bumblebee-Quadcopter System for Collision Avoidance", <em>Proc. 3rd IEEE RoboSoft</em>, pp. 188–193, 2020.</li>
+        <li>M. Yamada, <strong>S. Shigaki</strong>, H. Ohashi, M. Shimizu, K. Hosoda, D. Kurabayashi, "Measurement and Analysis of Odor Source Search Behavior of Insect Using Virtual Reality System", <em>Proc. SICE2020</em>, 2020.</li>
+        <li>K. Okajima, <strong>S. Shigaki</strong>, K. Sanada, D. Kurabayashi, "Chemical Plume Tracing Model Learning from Insect Behavior", <em>Proc. IEEE/SICE SII</em>, 2021.</li>
+        <li><strong>S. Shigaki</strong>, K. Okajima, K. Sanada, D. Kurabayashi, "Insect-Inspired Odor Intake Method for Chemical Plume Tracing in an Outdoor Environment", <em>Proc. IROS 2021</em>. DOI: 10.1109/IROS51168.2021.9636125.</li>
+        <li>R. Teramae, H. Ohashi, <strong>S. Shigaki</strong>, M. Shimizu, K. Hosoda, "Development of Engineered Skeletal Muscle Tissue Under Geometric Constraint", <em>Proc. AROB-ISBC-SWARM 2022</em>, 2022.</li>
+        <li>M. Yamada, H. Ohashi, K. Hosoda, D. Kurabayashi, <strong>S. Shigaki</strong>, "Speed Modulation Mechanism of Insect by Integrating Odor and Wind Sensory Information during Odor Source Localization", <em>Proc. AROB-ISBC-SWARM 2022</em>, 2022.</li>
+        <li>K. Shirai, K. Shimamura, A. Koubara, <strong>S. Shigaki</strong>, R. Fujisawa, "Development of a Behavioral Trajectory Measurement System (Bucket ANTAM) for Organisms Moving in a Two-Dimensional Plane", <em>Proc. AROB-ISBC-SWARM 2022</em>, 2022.</li>
+        <li>A. Koubara, K. Shirai, K. Shimamura, <strong>S. Shigaki</strong>, R. Fujisawa, "Analysis of Negative Phototaxis in the Pill-bug (Armadillidium vulgare) Using Omni-directional servo-sphere", <em>Proc. AROB-ISBC-SWARM 2022</em>, 2022.</li>
+        <li>H. Ohashi, R. Teramae, <strong>S. Shigaki</strong>, M. Shimizu, K. Hosoda, "Development of Three-dimensional Cultured Skeletal Muscle Tissue and Its Application", <em>Proc. AROB-ISBC-SWARM 2023</em>, 2023.</li>
+        <li><strong>S. Shigaki</strong>, T. Matsushita, K. Hosoda, "Experimental investigation of the effects of periodic intake on odor source localization behavior of silkmoth", <em>Proc. AROB-ISBC-SWARM 2023</em>, 2023.</li>
+        <li>H. Kobayashi, T. Miyamoto, T. Yabuki, <strong>S. Shigaki</strong>, S. Dobata, R. Fujisawa, "Designing a Swarm Behavior Rule to Create a Functional Structure Keeping a Constant Temperature", <em>Proc. AROB-ISBC-SWARM 2023</em>, 2023.</li>
+        <li>S. Fujii, H. Ohashi, <strong>S. Shigaki</strong>, M. Shimizu, K. Hosoda, "Fabrication and Functional Analysis of Bio-Actuator for Soft Robot", <em>Proc. SICE2022</em>, 2022.</li>
+        <li>R. Yanagisawa, <strong>S. Shigaki</strong>, D. Kurabayashi, K. Hosoda, "Odor Source Localization Using Gaussian Process Regression", <em>Proc. SICE2022</em>, 2022.</li>
+        <li><strong>S. Shigaki</strong>, R. Yanagisawa, Y. Shiota, B. S. Hansson, "Comparison of signal processing methods for the utilization of insect antenna as odor sensor", <em>Proc. Int. Symp. on Adaptive Motion of Animals and Machines</em>, 2023.</li>
+        <li><strong>S. Shigaki</strong>, "Measurement of odor source localization behavior of an insect in indoor and outdoor environments using a teleoperated system", <em>Proc. SICE2023</em>, 2023.</li>
+        <li>J. Homchanthanakul, <strong>S. Shigaki</strong>, P. Manoonpong, "Embodied Adaptive Sensing for Odor Concentration Maximization in Bio-Inspired Robotics", <em>Proc. IEEE ICRA</em>, pp. 15914–15920, 2025.</li>
+        <li><strong>S. Shigaki</strong>, K. Yokota, R. Sekiwa, D. Owaki, "Adaptive behavior to sensory organ defect in an insect analyzed by a constructive approach", <em>Proc. 12th Int. Symp. on Adaptive Motion of Animals and Machines</em>, 2025.</li>
+        <li>R. Sekiwa, <strong>S. Shigaki</strong>, T. Ibuki, "Analysis of the Linkage between Wing Structure and Chemical Plume Tracking Performance of an Insect Based on Odor Visualization", <em>Proc. 2025 SICE Festival with Annual Conference</em>, 2025.</li>
+        <li>P. Manoonpong, J. Homchanthanakul, <strong>S. Shigaki</strong>, "Bio-Inspired Robotics and Physically Embodied Artificial Intelligence for Animal-Like Robot Odor Sensing and Navigation: A Case Study", <em>Proc. 2025 SICE Festival with Annual Conference</em>, 2025.</li>
+        <li>T. Honda, <strong>S. Shigaki</strong>, T. Ibuki, "Developing a Multisensory Integration Model to Achieve Odor Source Localization in Complex Environments", <em>Proc. 2025 SICE Festival with Annual Conference</em>, 2025.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary><span><span class="t-ja">招待講演</span><span class="t-en" hidden>Invited Talks</span></span><span class="count">18 <span class="arrow">▸</span></span></summary>
+      <ul class="detail-list">
+        <li><strong>志垣俊介</strong>，講成的手法によるカイコガの匂い源探索メカニズムの紐解き，日本動物心理学会若手の会シンポジウム，専修大学，2018.05.19</li>
+        <li><strong>志垣俊介</strong>，アニマル・インザ・ループによる昆虫の適応的嗅覚ナビゲーション，第37回日本ロボット学会学術講演会，早稲田大学，2019.09.07</li>
+        <li><strong>志垣俊介</strong>，構成的手法による昆虫嗅覚ナビゲーション戦略の理解，令和元年度第三回ブレインウェア工学研究会，東北大学，2019.12.18</li>
+        <li><strong>Shunsuke Shigaki</strong>, Understanding insect search behavior through robot intervention, 第43回日本神経科学大会，オンライン，2020.07–08</li>
+        <li><strong>志垣俊介</strong>，昆虫嗅覚ナビゲーションシステムの自律移動体への実装，センサ&amp;IoTコンソーシアム，オンライン，2020.07.22</li>
+        <li><strong>志垣俊介</strong>，昆虫から学ぶ嗅覚ナビゲーションシステム，精密工学会 次世代センサ・アクチュエータ委員会，オンライン，2021.05.27</li>
+        <li><strong>Shunsuke Shigaki</strong>, Analysis of insect navigation behavior modulation mechanism using multimodal virtual reality, The 43rd JSCPB Annual Meeting, Online, 2021.12.05</li>
+        <li><strong>志垣俊介</strong>，昆虫から学ぶ創発システム，創発システム勉強会2022，浜松，2022.09.02</li>
+        <li><strong>Shunsuke Shigaki</strong>, Airflow Visualization Technique for Machine Olfaction Design, Gordon Research Conference, USA, 2023.07.11</li>
+        <li><strong>志垣俊介</strong>，感覚運動介入系を用いた昆虫の匂い源探索行動解析とその応用，第3回香りの計測と心理・生理学的効果の応用に関する調査専門委員会，東京，2023.12.19</li>
+        <li>S. Shigaki, Investigating environmentally adaptive navigation behavior of an insect using a teleoperation system, Int. Symp. on Hierarchical Bio-Navigation, 2024.03</li>
+        <li>S. Shigaki, Adaptive odor source localization behavior in silkmoth enhanced by multisensory information, XXVII Int. Congress of Entomology, Kyoto, 2024.08.25–30</li>
+        <li>志垣俊介，情報論的解析によって理解する複雑環境に対する昆虫の適応的匂い源探索行動，日本動物学会第95回長崎大会，2024.09.12–14</li>
+        <li>S. Shigaki, H. Ohashi, Analysis of Insect Localization Strategy Modulated by Environmental Complexity, Workshop of Swarm 2024, Kyoto, 2024.09.18–20</li>
+        <li><strong>志垣俊介</strong>，昆虫はどのように効率的に匂い源を探索するのか？，第31回日本環境動物昆虫学会セミナー，大阪，2024.09.28</li>
+        <li><strong>S. Shigaki</strong>, Designing of physical artificial robotics inspired by insect, The 1st Int. Symp. on Physical Artificial Intelligence and Robotics, Thailand, 2025.01.28–29</li>
+        <li><strong>志垣俊介</strong>，構成論的アプローチによって解析する昆虫の適応行動，第47回日本比較生理生化学会早稲田大会，東京，2025.12</li>
+        <li><strong>志垣俊介</strong>，生物に学び，ロボットを進化させる：分野融合が切り拓く若手研究者のキャリア，第70回日本応用動物昆虫学会大会，熊本，2026.03</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary><span><span class="t-ja">国際会議発表（アブストラクト等）</span><span class="t-en" hidden>International Conference Presentations</span></span><span class="count">48 <span class="arrow">▸</span></span></summary>
+      <ul class="detail-list">
+        <li><strong>S. Shigaki</strong>, S. Fukushima, R. Minegishi, D. Kurabayashi, R. Kanzaki, "Sequences decomposition of an odor-source searching behavior of a silkworm moth based on flight muscle electromyograms on 3 DOF servo-sphere", Int. Congress of Neuroethology, Hokkaido, 2014.07 (若手参加助成)</li>
+        <li>J. Y. Chew, S. Shigaki, D. Kurabayashi, "Time-Variant Chemical Plume Tracing Inspired by the Silk Moth", SSRR 2014, Hokkaido, 2014.12</li>
+        <li>S. Shigaki, F. Shunpei, R. Minegishi, D. Kurabayashi, R. Kanzaki, "Decomposition of locomotion pattern of insect by flight muscle electromyograms", ICRA 2015, Seattle, 2015.05</li>
+        <li>S. Shigaki, S. Fukushima, R. Minegishi, D. Kurabayashi, R. Kanzaki, "3-DOF Servosphere: A Novel Experiment System for Measuring Locomotion of Free Walking Silkworm Moth", SICE Annual Conference 2015, Hangzhou, 2015.07</li>
+        <li>S. Shigaki, S. Fukushima, D. Kurabayashi, R. Kanzaki, "Development and Evaluation of Simultaneous Measurement Device between Biosignal and Behavior of Animal", INCF Japan Node Int. Workshop, Tokyo, 2015.11</li>
+        <li>H. Kono, R. Minegishi, S. Shigaki, D. Kurabayashi, "The Analysis of Visual Feedback on Odor-source Searching Behavior of Male Silkworm Moth from the Activity of Neck Motor Neurons", INCF Japan Node Int. Workshop, Tokyo, 2015.11</li>
+        <li>S. Shigaki, D. Kurabayashi, "Estimation of locomotion switching timing in odor source search based on the insect brain information processing", Environmental Sensing and Animal Behavior, Tokyo, 2016.06</li>
+        <li>S. Shigaki, D. Kurabayashi, "Behavior Estimation of the Insect Based on Flight Muscle Electromyograms using the Support Vector Machine", SICE Annual Conference 2016, Ibaraki, 2016.09</li>
+        <li>S. Shigaki, D. Kurabayashi, "Identification of neural activity in the silkworm moth brain contribute to the odor source search behavior", SfN 46th Annual Meeting, San Diego, 2016.11</li>
+        <li>S. Shigaki, T. Sakurai, N. Ando, D. Kurabayashi, R. Kanzaki, "Time-Varying Moth-Inspired Algorithm for Chemical Plume Tracing in Turbulent Environment", IROS 2017, Vancouver, 2017.09 (渡航費援助)</li>
+        <li>S. Shigaki, M. R. Fikri, D. Kurabayashi, "Development of Autonomous Palm-Sized Drone System for Chemical Leakage Source Search", IROS 2017, Vancouver, 2017.09 (渡航費援助)</li>
+        <li>R. Yanagawa, S. Shigaki, D. Kurabayashi, "Construction of chemical plume tracing simulator in a non-rectifying environment", SICE Annual Conference 2018, Nara, 2018.09</li>
+        <li>M. R. Fikri, S. Shigaki, D. Kurabayashi, "Chemical Plume Tracing using Palm-Sized Quadrotor in 2D Obstacle Environment", SICE Annual Conference 2018, Nara, 2018.09</li>
+        <li>S. Shigaki, K. Sanada, D. Kurabayashi, "Development of Omnidirectional Mobile Treadmill for Neuroethology", Living Machines 2019, Nara, 2019.07</li>
+        <li>S. Haigou, S. Shigaki, D. Kurabayashi, "Bio-Inspired Behavior Modulation of Chemical Plume Tracing Robot based on Wind Information", IFAC WROCO2019, 2019.09</li>
+        <li>C. Hernandez Reyes, S. Fukushima, S. Shigaki, D. Kurabayashi, "Fusion of Cognitive and Reactive Algorithms for Chemical Plume Tracing on an Autonomous Mobile Robot", SICE Annual Conference 2019, 2019.09</li>
+        <li>S. Shigaki, K. Okajima, K. Sanada, D. Kurabayashi, "Experimental Analysis of the Influence of Olfactory Property on Chemical Plume Tracing Performance", IROS 2019, Macau, 2019.09 (渡航費援助)</li>
+        <li>O. Matsumoto, S. Shigaki, S. Ikemoto, T. Y. Chen, M. Shimizu, K. Hosoda, "2DOF link mechanism mimicking cheetah's spine and leg movement", ROBIO 2019, Dali, 2019.12</li>
+        <li>N. Yamada, S. Shigaki, M. Shimizu, H. Ohashi, T. Umedachi, T. Ogura, K. Hosoda, "Electroantennography Measurement by Printed Electronics Electrode", IEEE/SICE SII, Hawaii, 2020.01</li>
+        <li>R. Yanagawa, K. Kurabayashi, K. Okajima, S. Shigaki, Y. Hattori, D. Kurabayashi, "Variable Capture-Angle Sampling for Chemical Plume Tracing by an Autonomous Mobile Robot", IEEE/SICE SII, Hawaii, 2020.01</li>
+        <li>K. Okajima, S. Shigaki, C. Hernandez Reyes, K. Sanada, D. Kurabayashi, "Analysis of the Effect of Sampling Strategy: Flicking for Chemical Plume Tracing by an Autonomous Robot", IEEE/SICE SII, Hawaii, 2020.01</li>
+        <li>S. Shigaki, M. Shimizu, H. Kobayashi, R. Ishiguro, T. Umedachi, K. Hosoda, "Demonstration of Teleoperated Bumblebee-Quadcopter System for Collision Avoidance", 3rd IEEE RoboSoft, Virtual, 2020</li>
+        <li>M. Yamada, S. Shigaki, H. Ohashi, M. Shimizu, K. Hosoda, D. Kurabayashi, "Measurement and Analysis of Odor Source Search Behavior of Insect Using Virtual Reality System", SICE Annual Conference 2020, 2020.09</li>
+        <li>S. Shigaki, K. Okajima, K. Sanada, D. Kurabayashi, "Insect-Inspired Odor Intake Method for Chemical Plume Tracing in an Outdoor Environment", IROS 2021, Online, 2021.09</li>
+        <li>R. Teramae, H. Ohashi, S. Shigaki, M. Shimizu, K. Hosoda, "Development of Engineered Skeletal Muscle Tissue Under Geometric Constraint", AROB-ISBC-SWARM 2022</li>
+        <li>M. Yamada, H. Ohashi, K. Hosoda, D. Kurabayashi, S. Shigaki, "Speed Modulation Mechanism of Insect by Integrating Odor and Wind Sensory Information during Odor Source Localization", AROB-ISBC-SWARM 2022</li>
+        <li>K. Shirai, K. Shimamura, A. Koubara, S. Shigaki, R. Fujisawa, "Development of a Behavioral Trajectory Measurement System (Bucket ANTAM)", AROB-ISBC-SWARM 2022</li>
+        <li>A. Koubara, K. Shirai, K. Shimamura, S. Shigaki, R. Fujisawa, "Analysis of Negative Phototaxis in the Pill-bug (Armadillidium vulgare) Using Omni-directional servo-sphere", AROB-ISBC-SWARM 2022</li>
+        <li>H. Ohashi, R. Teramae, S. Shigaki, M. Shimizu, K. Hosoda, "Development of Three-dimensional Cultured Skeletal Muscle Tissue and Its Application", AROB-ISBC-SWARM 2023</li>
+        <li>S. Shigaki, T. Matsushita, K. Hosoda, "Experimental investigation of the effects of periodic intake on odor source localization behavior of silkmoth", AROB-ISBC-SWARM 2023</li>
+        <li>H. Kobayashi, T. Miyamoto, T. Yabuki, S. Shigaki, S. Dobata, R. Fujisawa, "Designing a Swarm Behavior Rule to Create a Functional Structure Keeping a Constant Temperature", AROB-ISBC-SWARM 2023</li>
+        <li>S. Fujii, H. Ohashi, S. Shigaki, M. Shimizu, K. Hosoda, "Fabrication and Functional Analysis of Bio-Actuator for Soft Robot", SICE Annual Conference 2022</li>
+        <li>R. Yanagisawa, S. Shigaki, D. Kurabayashi, K. Hosoda, "Odor Source Localization Using Gaussian Process Regression", SICE Annual Conference 2022</li>
+        <li>S. Shigaki, Y. Yoshimura, D. Kurabayashi, K. Hosoda, "Palm-Sized Quadcopter for Three-Dimensional Chemical Plume Tracking", Int. Instrumentation and Measurement Technology Conference, 2023.05</li>
+        <li>S. Shigaki, R. Yanagisawa, Y. Shiota, B. S. Hansson, "Comparison of signal processing methods for the utilization of insect antenna as odor sensor", 11th Int. Symp. on Adaptive Motion of Animals and Machines, 2023.06</li>
+        <li>S. Shigaki, "Insect olfactory receptor-inspired signal processing method for chemical sensing", IEEE Sensors, 2023.11</li>
+        <li>K. Yokota, S. Shigaki, "Experimental evaluation of anemotaxis implemented on a quadcopter", Int. Symp. on Hierarchical Bio-Navigation, 2024.03</li>
+        <li>S. Shigaki, T. Matsushita, K. Hosoda, "Analysis of the relationship between chemical plume tracking behavior and intake strategy using insect-robot hybrid system", ICRA 2024, Yokohama, 2024.05</li>
+        <li>S. Shigaki, H. Ohashi, D. Kurabayashi, "Analyzing the odor source localization behavior of adult male silkmoth in response to hierarchical environmental complexity", 15th Int. Congress of Neuroethology, 2024.07</li>
+        <li>T. Sakurai, K. Tanzawa, S. Shigaki, "Mechanisms underlying sex pheromone detection in the silkmoth Bombyx mori", XXVII Int. Congress of Entomology, Kyoto, 2024.08</li>
+        <li>S. Moriya, S. Shigaki, T. Ibuki, "Odor Learning System Based on Reservoir Computing Using Insect Electroantennogram", XXVII Int. Congress of Entomology, Kyoto, 2024.08</li>
+        <li>T. Honda, S. Shigaki, T. Ibuki, "Analyzing an Odor Source Localization Behavior of an Adult Male Silkmoth in Complex Environments Utilizing a Virtual Reality Framework", XXVII Int. Congress of Entomology, Kyoto, 2024.08</li>
+        <li>R. Sekiwa, S. Shigaki, T. Ibuki, "Development of an Automatic Insect Tracking Device for Measuring a Neural Signal during Free-walking", XXVII Int. Congress of Entomology, Kyoto, 2024.08 (Presentation Awards for Young/Women Scientists)</li>
+        <li>H. Ohashi, S. Fujii, S. Shigaki, M. Shimizu, K. Hosoda, "Experimental evaluation of three-dimensional skeletal muscle cells", The 1st Int. Symp. on Physical Artificial Intelligence and Robotics, Thailand, 2025.01 (Best Paper Award)</li>
+        <li>J. Homchanthanakul, S. Shigaki, P. Manoonpong, "Embodied Adaptive Sensing for Odor Concentration Maximization in Bio-Inspired Robotics", IEEE ICRA, Atlanta, 2025.06</li>
+        <li>T. Honda, S. Shigaki, T. Ibuki, "Developing a Multisensory Integration Model to Achieve Odor Source Localization in Complex Environments", 2025 SICE Festival, Chiang Mai, 2025.09</li>
+        <li>P. Manoonpong, J. Homchanthanakul, S. Shigaki, "Bio-Inspired Robotics and Physically Embodied Artificial Intelligence for Animal-Like Robot Odor Sensing and Navigation: A Case Study", 2025 SICE Festival, Chiang Mai, 2025.09</li>
+        <li>R. Sekiwa, S. Shigaki, T. Ibuki, "Analysis of the Linkage between Wing Structure and Chemical Plume Tracking Performance of an Insect Based on Odor Visualization", 2025 SICE Festival, Chiang Mai, 2025.09</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary><span><span class="t-ja">国内学会発表</span><span class="t-en" hidden>Domestic Conference Presentations</span></span><span class="count">100+ <span class="arrow">▸</span></span></summary>
+      <ul class="detail-list">
+        <li>志垣俊介，峯岸諒，倉林大輔，神崎亮平，3Dサーボスフィアを用いた雄カイコガの行動計測と解析，日本動物学会第65回関東支部大会，東京，2013.03</li>
+        <li>S. Shigaki, R. Minegishi, S. Fukushima, D. Kurabayashi, R. Kanzaki, Behavior Measurement of a Male Silkworm Moth using 3-DOF Servo-Sphere, JSCPB 2013, 兵庫，2013.07</li>
+        <li>志垣俊介，福島俊平，峯岸諒，倉林大輔，神崎亮平，昆虫自由歩行測定のための非拘束型計測装置，第19回創発システムシンポジウム，大阪，2013.08</li>
+        <li>志垣俊介，福島俊平，峯岸諒，倉林大輔，神崎亮平，カイコガ自由行動計測のための３自由度サーボスフィア，第31回日本ロボット学会学術講演会，東京，2013.09</li>
+        <li>福島俊平，志垣俊介，峯岸諒，倉林大輔，3自由度サーボスフィア上での触角電位の同時計測による行動推移の考察，日本機械学会ロボティクス・メカトロニクス部門，富山，2014.05</li>
+        <li>志垣俊介，福島俊平，峯岸諒，倉林大輔，安藤規秦，神崎亮平，昆虫羽ばたき時の筋肉活動電位を用いた行動弁別，第20回創発システムシンポジウム，2014.08（優秀講演賞）</li>
+        <li>志垣俊介，福島俊平，峯岸諒，倉林大輔，飛翔筋活動電位に基づくカイコガ雄成虫の行動弁別，第32回日本ロボット学会学術講演会，東京，2014.09</li>
+        <li>福島俊平，志垣俊介，倉林大輔，匂い源探索のためのマルチコプタシステムの構築，日本機械学会ロボティクス・メカトロニクス講演会，京都，2015.05</li>
+        <li>河野宏俊，峯岸諒，志垣俊介，倉林大輔，昆虫の匂い源探索行動における視覚情報統合解析の試み，第21回創発システムシンポジウム，長野，2015.08</li>
+        <li>S. Haigo, S. Shigaki, T. Sakurai, D. Kurabayashi, R. Kanzaki, H. Sezutsu, Analysis of the Wind-direction Sense for Chemical Plume Tracing of a Silkworm Moth, CompBio 2015, 広島，2015.12</li>
+        <li>足達哲也，吉原拓実，志垣俊介，川口達也，倉林大輔，生物模倣による化学物質探索自律移動ロボットのための周期的吸気システムの構築，日本機械学会ロボティクス・メカトロニクス講演会2016，神奈川，2016.06</li>
+        <li>志垣俊介，倉林大輔，小型無人飛行体を用いた匂い源探索システムの開発，第22回創発システムシンポジウム，長野，2016.08（最優秀講演賞）</li>
+        <li>志垣俊介，吉原拓実，柳川涼太，倉林大輔，化学物質発生源探索のための小型ドローンシステムの構築，第34回日本ロボット学会学術講演会，山形，2016.09</li>
+        <li>S. Shigaki, D. Kurabayashi, Simultaneous observation of LAL neural activity and motion exhibited by silkmoth, JSCPB 2016, 東京，2016.09</li>
+        <li>S. Haigo, S. Shigaki, D. Kurabayashi, T. Sakurai, R. Kanzaki, H. Sezutsu, Modulation of CPT Behavior Depends on Wind Flow Exhibited by a Silkmoth, JSCPB 2016, 東京，2016.09</li>
+        <li>H. Kono, R. Minegishi, S. Shigaki, D. Kurabayashi, Effect of Optic Flow Stimuli on Phases of Programmed Behavior during Odor-source Searching, JSCPB 2016, 東京，2016.09</li>
+        <li>志垣俊介，倉林大輔，昆虫微小脳情報処理を規範とした化学物質漏れ源探索アルゴリズムの構築と評価，第17回計測自動制御学会SI部門講演会，北海道，2016.12（優秀講演賞）</li>
+        <li>志垣俊介，倉林大輔，Fuzzy理論を用いた匂い源探索中の脳神経活動と行動の関係性の解明，第29回自律分散システム・シンポジウム，東京，2017.01</li>
+        <li>柳川涼太，白濱良亮，フタガオル マーク ルスタンディ，志垣俊介，倉林大輔，浮上動力を利用したセンサ導気による自律飛行体の匂い源定位，第22回ロボティクスシンポジア，群馬，2017.03</li>
+        <li>志垣俊介，Cesar Hernandez Reyes，Muhamad Rausyan Fikri，倉林大輔，生物行動理解のための人工物ー生物閉ループ系の構築，第35回日本ロボット学会学術講演会，埼玉，2017.09</li>
+        <li>S. Shigaki, D. Kurabayashi, Elucidation of relationship between odor source search behavior and LAL neural activity of silkworm moth, JSCPB 2017, 福岡，2017.11</li>
+        <li>志垣俊介，河野宏俊，倉林大輔，構成的手法を用いたカイコガの匂い源探索における行動修飾メカニズムの解明，計測自動制御学会 システム・情報部門 学術講演会2017，静岡，2017.11</li>
+        <li>志垣俊介，河野宏俊，倉林大輔，カイコガの匂い源探索中の視覚情報による行動修飾の解析，第18回計測自動制御学会SI部門講演会，宮城，2017.12（優秀講演賞）</li>
+        <li>倉林大輔，拝郷将馬，志垣俊介，光遺伝学的手法によるカイコガの匂い源定位における風向依存行動モデル，第23回ロボティクスシンポジア，静岡，2018.03</li>
+        <li>志垣俊介，倉林大輔，昆虫脳が持つ適応的コントローラの解明と人工物への実装，第62回システム制御情報学会研究発表講演会，京都，2018.05</li>
+        <li>志垣俊介，倉林大輔，小型UAVによる匂い源探索のためのInsect-Machine interface，ROBOMECH2018，北九州，2018.06</li>
+        <li>志垣俊介，倉林大輔，小型ドローンによる3次元匂い源探索，第36回日本ロボット学会学術講演会，愛知，2018.09</li>
+        <li>S. Shigaki, Cesar Hernandez Reyes, D. Kurabayashi, Analysis of odor source localization strategy algorithm of silkworm moth with information entropy, JSCPB 40th Annual Meeting, 神戸，2018.11</li>
+        <li>志垣俊介，倉林大輔，情報エントロピを用いた昆虫模倣型匂い源探索戦略の解析，計測自動制御学会 システム・情報部門 学術講演会2018，富山，2018.11</li>
+        <li>Cesar Hernandez Reyes, S. Fukushima, S. Shigaki, D. Kurabayashi, Acquisition of switching policy of hybrid search strategy for chemical plume tracing, 第31回自律分散システム・シンポジウム，2019.01</li>
+        <li>志垣俊介，岡島慶，眞田一志，倉林大輔，清水正宏，嗅覚応答特性が与えるナビゲーション性能への影響評価，第37回日本ロボット学会学術講演会，2019.09</li>
+        <li>石黒理紗，ジョシデバラッド，志垣俊介，梅舘拓也，清水正宏，細田耕，マルハナバチの仮想環境下マルチコプタ操縦システムの開発，第37回日本ロボット学会学術講演会，2019.09</li>
+        <li>岡島慶，志垣俊介，眞田一志，倉林大輔，平行リンク機構を用いた能動的なサンプリング範囲切り替えシステム構築，日本機械学会ロボティクス・メカトロニクス部門講演会，2019.06</li>
+        <li>志垣俊介，眞田一志，倉林大輔，昆虫の適応行動理解のための移動型トレッドミルの構築，日本機械学会ロボティクス・メカトロニクス部門講演会，2019.06</li>
+        <li>H. Ohashi, N. Yamada, N. Minakawa, R. Yanagisawa, S. Shigaki, M. Shimizu, K. Hosoda, Towards 4D printing technology for muscle cells, JSCPB 41st Annual Meeting, 東京，2019.11</li>
+        <li>K. Okajima, S. Shigaki, T. Chiba, C. Hernandez Reyes, K. Sanada, D. Kurabayashi, Analysis of the female searching behavior in silkworm moth by simultaneously measuring the change of odor distribution, JSCPB 41st Annual Meeting, 東京，2019.11</li>
+        <li>S. Sakai, M. Shimizu, S. Ikemoto, K. Hosoda, S. Shigaki, H. Ohashi, Posture control of lower limbs of Xenopus by small multi-electrode stimulation of sciatic nerve bundle, JSCPB 41st Annual Meeting, 東京，2019.11</li>
+        <li>N. Yamada, S. Shigaki, M. Shimizu, H. Ohashi, T. Umedachi, T. Ogura, K. Hosoda, Experimental Verification of Printed Electrode for Electroantennogram, JSCPB 41st Annual Meeting, 東京，2019.11</li>
+        <li>志垣俊介，清水正宏，倉林大輔，昆虫適応行動計測のためのバーチャルリアリティシステムの構築，第20回計測自動制御学会SI部門講演会，高松，2019.12（優秀講演賞）</li>
+        <li>見越郁也，志垣俊介，服部佑哉，倉林大輔，空気中の化学刺激受容における移動速度に依存した情報抽出に関する実験的検討，第20回計測自動制御学会SI部門講演会，高松，2019.12</li>
+        <li>志垣俊介，清水正宏，倉林大輔，昆虫の嗅覚ナビゲーション行動解析のための感覚介入システム，第32回自律分散システム・シンポジウム，2020.01</li>
+        <li>北岩寛大，志垣俊介，大橋ひろ乃，清水正宏，細田耕，相互引き込みを起こす心筋細胞アクチュエータの設計，第32回自律分散システム・シンポジウム，2020.01</li>
+        <li>千葉崇宏，志垣俊介，眞田一志，倉林大輔，昆虫の触角電位応答に基づく匂い弁別システムの設計，日本機械学会ロボティクス・メカトロニクス部門講演会，2020</li>
+        <li>山田真由，志垣俊介，大橋ひろ乃，清水正宏，細田耕，倉林大輔，バーチャルリアリティシステムを用いた昆虫の匂い源探索行動の計測と解析，日本機械学会ロボティクス・メカトロニクス部門講演会，2020</li>
+        <li>倉林快生，柳川涼太，志垣俊介，服部佑哉，倉林大輔，自律型匂い源探索ロボットに対する可変吸気機構の導入，日本機械学会ロボティクス・メカトロニクス部門講演会，2020</li>
+        <li>古賀正将，志垣俊介，藤澤隆介，小型生物用全方向移動補償装置PSYCO-ANTAMの開発と評価，日本機械学会ロボティクス・メカトロニクス部門講演会，2020</li>
+        <li>M. Yamada, S. Shigaki, H. Ohashi, M. Shimizu, K. Hosoda, D. Kurabayashi, The Visual and Wind Information Contribute to Odor Source Search Behavior of Male Silkmoth, JSCPB 42nd Annual Meeting, 山形，2020.11</li>
+        <li>R. Yanagisawa, S. Shigaki, K. Yasui, D. Owaki, Y. Sugimoto, A. Ishiguro, M. Shimizu, Measurement of insect wing beat with novel vibration sensor, JSCPB 42nd Annual Meeting, 山形，2020.11</li>
+        <li>岡島慶，志垣俊介，眞田一志，倉林大輔，匂い刺激入力と匂い源探索行動の同時計測システムの構築，第21回計測自動制御学会SI部門講演会，福岡（オンライン），2020.12（優秀講演賞）</li>
+        <li>山田直輝，細田耕，志垣俊介，昆虫触角の応答特性の変化についての解析，第21回計測自動制御学会SI部門講演会，福岡（オンライン），2020.12</li>
+        <li>山田真由，大橋ひろ乃，倉林大輔，細田耕，志垣俊介，昆虫の匂い源探索行動における視覚・風向情報の役割解析，第33回自律分散システム・シンポジウム，2021.01</li>
+        <li>近藤壮，Cesar Hernandez Reyes，服部佑哉，山田真由，志垣俊介，倉林大輔，逆強化学習を用いたカイコガの匂い源探索における報酬関数および行動戦略の推定，日本機械学会ロボティクス・メカトロニクス部門講演会，2021</li>
+        <li>皆川夏希，山田真由，大橋ひろ乃，細田耕，倉林大輔，志垣俊介，昆虫の嗅覚ナビゲーションシステム解明のための遠隔操作系の確立，日本機械学会ロボティクス・メカトロニクス部門講演会，2021</li>
+        <li>柳澤亮太，志垣俊介，清水正宏，細田耕，匂い源探索における昆虫の羽ばたき機能の構成的検証，日本機械学会ロボティクス・メカトロニクス部門講演会，2021</li>
+        <li>志垣俊介，山田直輝，大橋ひろ乃，昆虫触角電位応答の減衰特性を利用した化学物質漏れ源探索システム，第34回自律分散システム・シンポジウム，2022.01</li>
+        <li>藤井星空，大橋ひろ乃，志垣俊介，清水正宏，細田耕，ソフトロボットのためのバイオアクチュエータ構築および機能解析，日本機械学会ロボティクス・メカトロニクス部門講演会，札幌，2022.06</li>
+        <li>松下拓未，志垣俊介，細田耕，昆虫機械融合システムを用いた周期的吸気と匂い源探索行動の連関解明，日本機械学会ロボティクス・メカトロニクス部門講演会，札幌，2022.06</li>
+        <li>李庭ミン，志垣俊介，眞田一志，倉林大輔，データ駆動型による空間依存的な昆虫の匂い源探索行動のモデル化，日本機械学会ロボティクス・メカトロニクス部門講演会，札幌，2022.06</li>
+        <li>渡辺椋太，近藤壮，志垣俊介，倉林大輔，障害物領域における匂い源探索への適応的な行動選択水準モデルの提案，日本機械学会ロボティクス・メカトロニクス部門講演会，札幌，2022.06</li>
+        <li>小川登司，Nhat-Duc Luong，志垣俊介，倉林大輔，2次元平面の匂い源探索における3自由度サンプリング戦略，日本機械学会ロボティクス・メカトロニクス部門講演会，札幌，2022.06</li>
+        <li>志垣俊介，昆虫用仮想現実を用いた匂い感覚とエコミメティクスの連関解析の試み，第93回日本動物学会，東京，2022.09</li>
+        <li>志垣俊介，感覚介入系を用いた昆虫の多感覚刺激に対する運動制御メカニズムの解析，第71回高分子討論会，北海道，2022.09</li>
+        <li>柳澤亮太，志垣俊介，塩田裕介，細田耕，タバコスズメガの触角電図を利用した匂い源探索，第35回自律分散システム・シンポジウム，大阪，2023.01</li>
+        <li>志垣俊介，丹澤恭平，櫻井健志，生理応答計測と気流可視化を用いた昆虫触角に潜む化学感覚特性の解析，第24回計測自動制御学会SI部門講演会，2023.12（優秀講演賞）</li>
+        <li>渡辺椋太，Nhat Luong Duc，志垣俊介，檀隼人，倉林大輔，障害物領域における逆強化学習を用いたカイコガの匂い源探索戦略の抽出，第24回計測自動制御学会SI部門講演会，2023.12</li>
+        <li>小川登司，Luong Dug Nha，志垣俊介，檀隼人，倉林大輔，多次元センシングデバイスの信号位相差に基づく匂い方向の推定，第24回計測自動制御学会SI部門講演会，2023.12</li>
+        <li>Shunsuke Shigaki, Toshihiro Honda, Tatsuya Ibuki, Behavior measurement of male silk moth in diverse spaces using digital twin technology, JSCPB 45th Annual Meeting, 2023.12</li>
+        <li>Kyohei Tanzawa, Shunsuke Shigaki, Takeshi Sakurai, The effects of wind speed on particle leakage and capture ratio of antennae of the silkmoth Bombyx mori, JSCPB 45th Annual Meeting, 2023.12</li>
+        <li>志垣俊介，昆虫の嗅覚受容細胞の周波数応答特性を利用した匂い情報処理，計測自動制御学会 システム・情報部門 学術講演会2023，2023.11</li>
+        <li>横田圭祐，細田耕，志垣俊介，クアッドコプタへの走風性の実装と実験的評価，ロボティクス・メカトロニクス講演会2023，2023.06</li>
+        <li>志垣俊介，関和諒子，伊吹竜也，匂い源定位中における昆虫の触角電位応答と行動の同時計測，第36回自律分散システム・シンポジウム，東京，2024.02</li>
+        <li>本多俊博，志垣俊介，伊吹竜也，昆虫用仮想現実を用いた複雑環境下でのカイコガ雄成虫の匂い源探索行動の解析，ロボティクス・メカトロニクス講演会2024，2024.05</li>
+        <li>関和諒子，志垣俊介，伊吹竜也，自由行動中の生理応答計測のための昆虫自動追尾装置の開発，ロボティクス・メカトロニクス講演会2024，2024.05</li>
+        <li>Ryoko Sekiwa, Shunsuke Shigaki, Tatsuya Ibuki, Analyzing female source localization behavior of adult male silkmoth in terms of odor diffusion and electroantennogram signals, JSCPB 46th Annual Meeting, 2024.09</li>
+        <li>Keisuke Yokota, Shunsuke Shigaki, Analyzing the behavioral modulation mechanism of an adult male silk moth caused by antennal lost, JSCPB 46th Annual Meeting, 2024.09</li>
+        <li>Takuro S. Ohashi, Yifeng Y.J. Xu, Shunsuke Shigaki, Yukiko Nakamura, Tai-Ting Lee, YuMin M. Loh, Daniel F. Eberl, Matthew P. Su, Azusa Kamikouchi, Sexual dimorphism in auditory representation in yellow fever mosquito brain, JSCPB 46th Annual Meeting, 2024.09</li>
+        <li>Ryota Numazawa, Hirono Ohashi, Naoya Fujimoto, Yoichi Seki, Shusuke Shigaki, Yasuharu Takaku, Takeshi Sakurai, Behavioral and physiological responses of Orius strigicollis to different wavelength and intensity of light, JSCPB 46th Annual Meeting, 2024.09</li>
+        <li>檀隼人，牧俊介，志垣俊介，倉林大輔，高自由度化学物質計測器による環境の時空間的特徴に基づく分類手法の検討，計測自動制御学会 システム・情報部門 学術講演会，富山，2024.11</li>
+        <li>伊藤樹，志垣俊介，伊吹竜也，昆虫の探索行動を規範とした状況依存的切替制御モデルの構築，計測自動制御学会 システム・情報部門 学術講演会，富山，2024.11</li>
+        <li>関和諒子，志垣俊介，伊吹竜也，匂い可視化によって調査する環境と昆虫身体との相互作用，計測自動制御学会 システム・情報部門 学術講演会，富山，2024.11</li>
+        <li>大橋ひろ乃，志垣俊介，三次元培養骨格筋細胞駆動型ロボットにおける動作性能の最大化，計測自動制御学会 システム・情報部門 学術講演会，富山，2024.11</li>
+        <li>大橋拓朗，上川内あづさ，志垣俊介，昆虫最大の聴覚器を持つ蚊の聴覚情報処理機構，第37回自律分散システム・シンポジウム，山口，2025.01</li>
+        <li>横田圭祐，志垣俊介，四足歩行ロボットを用いたカイコガの触角欠損時の匂い源探索アルゴリズムの実験的検証，第37回自律分散システム・シンポジウム，山口，2025.01</li>
+        <li>伊藤樹，志垣俊介，伊吹竜也，昆虫の匂い源探索行動のシステム同定と性能検証，第37回自律分散システム・シンポジウム，山口，2025.01</li>
+        <li>塩田裕介，志垣俊介，神崎亮平，櫻井健志，昆虫の嗅覚センサ・適応能力の分子・生理基盤と工学応用析，第37回自律分散システム・シンポジウム，山口，2025.01</li>
+        <li>関和諒子，志垣俊介，伊吹竜也，匂い可視化によって解析する匂い動態と探索行動の連関関係，第37回自律分散システム・シンポジウム，山口，2025.01（萌芽部門最優秀賞）</li>
+        <li>志垣俊介，横田圭祐，感覚器欠損に対する昆虫に適応行動の解析と工学的再構成，ロボティクス・メカトロニクス講演会2025，山形，2025.06</li>
+        <li>関和諒子，志垣俊介，伊吹竜也，匂い可視化によって解析する匂い源定位中の羽ばたき効果，ロボティクス・メカトロニクス講演会2025，山形，2025.06</li>
+        <li>大橋ひろ乃，志垣俊介，微小昆虫の適応行動解析のためのロボット介入システムの開発，計測自動制御学会 システム・情報部門 学術講演会，仙台，2025.11</li>
+        <li>関和諒子，大橋ひろ乃，大脇大，志垣俊介，ナナフシ雄成虫の樹葉の香に対する反応行動の解析，計測自動制御学会 システム・情報部門 学術講演会，仙台，2025.11</li>
+        <li>Ryota Numazawa, Hirono Ohashi, Nao Iida, Naoya Fujimoto, Ayu Okamura, Shusuke Shigaki, Yasuharu Takaku, Keisuke Tanaka, Yoichi Seki, Takeshi Sakurai, Physiological and molecular basis underlying wavelength preference in the minute pirate bug, JSCPB 47th Annual Meeting, 2025.12</li>
+        <li>Jettanan Homachanthanakul, Shunsuke Shigaki, Poramate Manoonpong, Integrating embodied adaptive sensing with an animal-in-the-loop (AIL) framework for efficient odor-driven navigation, JSCPB 47th Annual Meeting, 2025.12</li>
+        <li>Dai Owaki, Rrezon Pllana, Hirono Ohashi, Shunsuke Shigaki, Hitoshi Aonuma, A Multimodal Virtual Reality Platform for Investigating Locomotion–Navigation Coupling in Stick Insect, JSCPB 47th Annual Meeting, 2025.12</li>
+        <li>関和諒子，志垣俊介，伊吹竜也，昆虫の羽ばたきによる匂い引込み効果の解析と再構成，第26回計測自動制御学会SI部門講演会，広島，2025.12</li>
+        <li>志垣俊介，眞部寛之，気流可視化によって解析する哺乳類のスニッフィング機能の構成論的解明，第26回計測自動制御学会SI部門講演会，広島，2025.12</li>
+        <li>志垣俊介，哺乳類の匂いセンシングにおけるアクティブスニッフィングの構成論的解析，第38回自律分散システム・シンポジウム，浜松，2026.01</li>
+        <li>関和諒子，志垣俊介，伊吹竜也，匂い源探索における昆虫の能動的センシングメカニズムの構成論的解析，第38回自律分散システム・シンポジウム，浜松，2026.01</li>
+        <li>関和諒子，伊吹竜也，志垣俊介，匂い源探索のための昆虫の匂い濃度依存的速度調整メカニズムのモデル化，第31回ロボティクスシンポジア，函館，2026.03</li>
+        <li>志垣俊介，眞部寛之，哺乳類の嗅覚メカニズムの構成論的理解，ロボティクス・メカトロニクス講演会2026，福岡，2026.06–07</li>
+        <li>川添駿，志垣俊介，伊吹竜也，安全制約を導入した昆虫模倣型嗅覚ナビゲーションシステムの構築，ロボティクス・メカトロニクス講演会2026，福岡，2026.06–07</li>
+        <li>井出健介，志垣俊介，伊吹竜也，ナナフシのナビゲーション行動計測のための3自由度サーボスフィアの構築，ロボティクス・メカトロニクス講演会2026，福岡，2026.06–07</li>
+        <li>関和諒子，伊吹竜也，志垣俊介，構成論的アプローチによって解き明かす嗅覚ナビゲーション中の羽ばたき効果，ロボティクス・メカトロニクス講演会2026，福岡，2026.06–07</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow t-ja">CONTACT</div><div class="eyebrow t-en" hidden>CONTACT</div>
+      <h2 class="t-ja">連絡先</h2><h2 class="t-en" hidden>Contact</h2>
+    </div>
+    <div class="split">
+      <div class="contact-block">
+        <h4 class="t-ja">所属</h4><h4 class="t-en" hidden>Affiliation</h4>
+        <p>
+          <span class="t-ja">国立情報学研究所　情報学プリンシプル研究系<br>〒101-8430　東京都千代田区一ツ橋2-1-2</span>
+          <span class="t-en" hidden>Principles of Informatics Research Division<br>National Institute of Informatics<br>2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan</span>
+        </p>
+        <h4 class="t-ja">メール</h4><h4 class="t-en" hidden>Email</h4>
+        <p><a class="email" href="mailto:shigaki@nii.ac.jp">shigaki [at] nii.ac.jp</a></p>
+      </div>
+      <div class="contact-block">
+        <h4 class="t-ja">お問い合わせについて</h4><h4 class="t-en" hidden>Getting in Touch</h4>
+        <p class="t-ja">共同研究、取材、講演のご依頼、学生からのお問い合わせなど、お気軽にメールにてご連絡ください。件名に用件を明記いただけますと幸いです。</p>
+        <p class="t-en" hidden>Feel free to reach out by email regarding potential collaborations, media inquiries, invited talks, or questions from prospective students. Please indicate the topic in the subject line.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECRUIT ============ -->
+<section id="recruit" style="background:var(--ink-panel); border-top:1px solid var(--ink-line);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow t-ja">RECRUIT</div><div class="eyebrow t-en" hidden>RECRUIT</div>
+      <h2 class="t-ja">募集</h2><h2 class="t-en" hidden>Recruit</h2>
+      <p class="t-ja">昆虫のナビゲーション能力の謎を解き明かし、それをロボットに実装することに興味のある学生・研究員を歓迎します。工学（制御・ロボティクス・センシング）だけでなく、生物学・神経科学のバックグラウンドを持つ方も歓迎します。</p>
+      <p class="t-en" hidden>We welcome students and researchers interested in uncovering the mysteries of insect navigation and implementing them on robots — backgrounds in engineering (control, robotics, sensing) as well as biology and neuroscience are all welcome.</p>
+    </div>
+    <ul class="recruit-points">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <span class="t-ja">生物学と工学の両方に興味がある学部生・大学院生</span>
+        <span class="t-en" hidden>Undergraduate and graduate students interested in both biology and engineering</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <span class="t-ja">昆虫行動計測、ロボット制御、信号処理、機械学習などのスキルを伸ばしたい方</span>
+        <span class="t-en" hidden>Anyone wanting to develop skills in insect behavior measurement, robot control, signal processing, or machine learning</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <span class="t-ja">研究員・特別研究員（PD）としての参加にご興味のある方</span>
+        <span class="t-en" hidden>Postdoctoral researchers interested in joining as a research fellow</span></li>
+    </ul>
+    <a class="cta-btn t-ja" href="mailto:shigaki@nii.ac.jp">まずはメールでご相談ください</a>
+    <a class="cta-btn t-en" hidden href="mailto:shigaki@nii.ac.jp">Get in touch by email</a>
+    <div class="assumption-note">
+      <span class="t-ja">※このセクションは仮の文章です。募集要項の詳細（対象、待遇、応募方法など）に差し替えてご利用ください。</span>
+      <span class="t-en" hidden>* This section is placeholder text — please replace it with your actual recruitment details (eligibility, conditions, how to apply, etc.).</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Shunsuke Shigaki</span>
+    <span class="t-ja">最終更新: 2026年9月</span><span class="t-en" hidden>Last updated: September 2026</span>
   </div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script src="assets/site.js"></script>
 </body>
 </html>
