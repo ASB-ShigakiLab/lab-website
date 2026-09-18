@@ -34,110 +34,234 @@
 </header>
 
 <!-- ============ RESEARCH ============ -->
-<section class="paper" id="research">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow t-ja">RESEARCH</div><div class="eyebrow t-en" hidden>RESEARCH</div>
-      <h2 class="t-ja">研究</h2><h2 class="t-en" hidden>Research</h2>
-      <p class="t-ja">昆虫が持つ優れた匂い源探索能力を構成論的手法で解き明かし、そこで得た知見をロボットに実装することで、生物のように環境に適応するロボットシステムの実現を目指しています。</p>
-      <p class="t-en" hidden>We use a constructive approach to uncover the remarkable odor-source-tracing abilities of insects, then implement what we learn on robots — working toward robotic systems that adapt to their environment as living organisms do.</p>
-    </div>
-
-    <div class="research-item">
-      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=646x1024:format=png/path/s4f915e2292247085/image/i4a135fb1704b14a8/version/1548160161/image.png" alt="Palm-sized quadcopter for 3D chemical plume tracking">
-      <div>
-        <h3 class="research-title">Palm-Sized Quadcopter for Three-Dimensional Chemical Plume Tracking</h3>
-        <p class="research-text t-ja">手のひらサイズの小型ドローンによって、匂い（化学物質）の三次元的な追跡を実現する研究です。災害時の捜索や有害物質の発生源特定への応用を目指し、気流可視化（PIV）でドローン周囲の匂いの流れを解析し、最適なセンサ配置と、蛾の探索行動に着想を得た3次元サージキャスティングアルゴリズムを開発。風向が大きく変化する環境でも従来手法を上回る探索性能を確認しました。</p>
-        <p class="research-text t-en" hidden>We designed a palm-sized quadcopter that tracks chemical plumes in three dimensions — useful for disaster search-and-rescue and locating hazardous-material sources. Using particle image velocimetry, we mapped how airflow around the drone carries odor, placed sensors accordingly, and built a 3D surge-casting algorithm inspired by a moth's plume-tracing strategy. The system outperforms conventional 3D tracking even under shifting wind conditions.</p>
-        <div class="research-meta"><span style="font-family:var(--mono); font-size:0.74rem; color:var(--text-dark-dim);">Supported by JKA / AUTORACE</span></div>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=597x10000:format=png/path/s4f915e2292247085/image/i9fad8a0074694768/version/1637761954/image.png" alt="Multisensory-motor integration in silkmoth olfactory navigation using VR">
-      <div>
-        <h3 class="research-title">Multisensory-Motor Integration in Olfactory Navigation of Silkmoth Using Virtual Reality</h3>
-        <p class="research-text t-ja">昆虫用バーチャルリアリティ（VR）システムを用い、カイコガ雄成虫が匂い・視覚・風向の情報をどのように統合してメス探索行動を行うかを調べました。三つの情報が一致する場合に探索成功率が最も高く、風向情報が実際と異なると、より慎重な行動をとることが判明。得られた知見を数理モデル化し、従来の探索アルゴリズムを上回る性能を実証しました（eLife誌, 2021年掲載）。</p>
-        <p class="research-text t-en" hidden>Using a VR system for insects, we investigated how the male silkmoth integrates odor, vision, and wind-direction cues while searching for a mate. Search success was highest when all three cues matched; conflicting wind information made the moth more cautious. We modeled this behavioral modulation and improved on conventional odor-source-search algorithms (published in <em>eLife</em>, 2021).</p>
-        <div class="research-meta"><a href="https://www.dropbox.com/s/mbwfs4m06l7jwal/data.zip?dl=0" target="_blank" rel="noopener">↓ Behavioral Data (Dropbox)</a></div>
-      </div>
-    </div>
-
-    <div class="research-item no-image">
-      <div class="research-icon">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><path d="M3 12h4l2-8 4 16 2-8h6"/></svg>
-      </div>
-      <h3 class="research-title">Wind Source Localization System Based on a Palm-Sized Quadcopter</h3>
-      <p class="research-text t-ja">小型ドローンに風向センサを搭載し、風源定位を実現する研究です。プロペラ後流の影響を受けない最適なセンサ配置を実験的に特定し、風向・風速情報に基づく走風性アルゴリズムを構築。環境の風の強さによらず、ドローンが風源に到達できることを確認しています。</p>
-      <p class="research-text t-en" hidden>We equipped a palm-sized quadcopter with a compact wind-direction sensor to achieve wind-source localization. After identifying the sensor placement that avoids propeller-wake interference, we built an anemotaxis algorithm and confirmed the drone could localize a wind source regardless of ambient wind strength.</p>
-    </div>
-
-    <div class="research-item no-image">
-      <div class="research-icon">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
-      </div>
-      <h3 class="research-title">A Data-Driven Framework for Modeling Organisms' Chemical Plume Tracing Behavior</h3>
-      <p class="research-text t-ja">生物の匂い源探索行動を再現するため、従来のモデルベース手法に代わるデータ駆動型アプローチを提案。アルコールセンサアレイとカメラによる計測から、ガウス過程回帰で入出力関係を確率過程としてモデル化しました。単純な環境では従来手法を上回る成功率を示した一方、複雑な環境では有効性が低下することも確認しています。</p>
-      <p class="research-text t-en" hidden>We proposed a data-driven alternative to conventional model-based strategies for reproducing an organism's plume-tracing behavior, learning the input–output relationship via Gaussian-process regression from sensor-array and camera measurements. The model outperformed model-based strategies in simple settings, though its advantage narrowed in more complex environments.</p>
-      <div class="research-meta"><a href="https://www.dropbox.com/s/y52v9q161ez99gt/Experimentsdata.zip?dl=0" target="_blank" rel="noopener">↓ Experiment Data (Dropbox)</a></div>
-    </div>
-
-    <div class="research-item no-image">
-      <div class="research-icon">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><path d="M12 2c-3 4-6 8-6 12a6 6 0 0012 0c0-4-3-8-6-12z"/></svg>
-      </div>
-      <h3 class="research-title">Wearable Vibration Sensor for Measuring Insect Wing Flapping</h3>
-      <p class="research-text t-ja">シリコーンポリマーに銀粒子を分散させた柔軟なフィルムセンサを開発し、昆虫の羽ばたき周波数を計測。ガとトンボの翅に装着した実験で高精度な計測を実現し、匂い源探索中のガの羽ばたき周波数が、匂いを感知する頻度に応じて変化することを明らかにしました。</p>
-      <p class="research-text t-en" hidden>We fabricated a flexible film sensor — silver particles in a silicone matrix — that measures an insect's wingbeat frequency from bending deformation. Attached to a moth and a dragonfly, it measured flapping with high accuracy, and revealed that a moth's wingbeat frequency shifts with how often it detects an odor while tracing a plume.</p>
-      <div class="research-meta"><a href="https://www.dropbox.com/s/q124g79v3y0f0r4/MDPI_SourceCode.zip?dl=0" target="_blank" rel="noopener">↓ Source Code (Dropbox)</a></div>
-    </div>
-
-    <div class="research-item">
-      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=330x1024:format=png/path/s4f915e2292247085/image/i66efb16ff045f04c/version/1534732341/image.png" alt="Animal-in-the-loop system concept">
-      <div>
-        <h3 class="research-title">Animal-in-the-Loop System</h3>
-        <p class="research-text t-ja">従来の生物規範アルゴリズムは、実装先ロボットの動力学特性を考慮せずに構築されるため、生物本来の能力を再現しきれない課題がありました。本研究では、ロボットの動特性を織り込んで生物の適応行動を同定する「アニマル・インザ・ループシステム」を構築しています。</p>
-        <p class="research-text t-en" hidden>Conventional bio-inspired algorithms are typically modeled without considering the dynamic characteristics of the robot meant to implement them, limiting how well they reproduce the animal's true ability. We built an "animal-in-the-loop" experimental system that identifies adaptive animal behavior while accounting for the robot's own dynamics.</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=330x1024:format=png/path/s4f915e2292247085/image/i7f44ce6932195326/version/1534732243/image.png" alt="3-DOF servosphere overview">
-      <div>
-        <h3 class="research-title">A Novel Method for Full Locomotion Compensation of an Untethered Walking Insect (3-DOF Servosphere)</h3>
-        <p class="research-text t-ja">昆虫を拘束せずに自然な行動を計測できる「3自由度サーボスフィア」を開発。高速度カメラで球体上の昆虫の位置・姿勢を取得し、その情報に基づき球体を制御することで、非拘束のまま位置を一定に保てます。行動と同時に筋電位などの生体信号を計測でき、カイコガ雄成虫の匂い源探索行動と飛翔筋活動の関係を明らかにしました。</p>
-        <p class="research-text t-en" hidden>We developed the "3-DOF servosphere," an untethered measurement system where a freely walking insect sits atop a sphere whose rotation is servo-controlled from overhead camera tracking, keeping its position fixed without restraint. This lets us measure natural locomotion together with biosignals such as flight-muscle EMG — revealing the link between a male silkmoth's plume-tracing behavior and flight-muscle activity.</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=237x1024:format=png/path/s4f915e2292247085/image/id588424142faf995/version/1534732252/image.png" alt="EMG measurement points and behavior estimation results">
-      <div>
-        <h3 class="research-title">Time-Varying Moth-Inspired Algorithm for Chemical Plume Tracing in Turbulent Environments</h3>
-        <p class="research-text t-ja">軌跡データだけでは推定が難しい行動状態を、飛翔筋筋電位からサポートベクターマシンで推定。カイコガ雄成虫は匂いの受容回数が増える探索終盤ほど直進行動の時間を短くしていることがわかりました。この時変的な行動則をモデル化して地上走行ロボットに実装した結果、従来アルゴリズムより高い到達率を達成しました。</p>
-        <p class="research-text t-en" hidden>By estimating behavioral state from flight-muscle EMG using a support-vector machine, we found that male silkmoths shorten their straight upwind runs as they accumulate odor detections late in a search. We modeled this time-varying behavior and implemented it on a ground robot, which reached the odor source more reliably than a conventional algorithm.</p>
-      </div>
-    </div>
-
-    <div class="research-item">
-      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=641x1024:format=png/path/s4f915e2292247085/image/if8e074f497c69556/version/1616494342/image.png" alt="LAL neural activity and behavior measurement">
-      <div>
-        <h3 class="research-title">Modeling the Adaptive Chemical Plume Tracing Algorithm of an Insect Using Fuzzy Inference</h3>
-        <p class="research-text t-ja">カイコガ雄成虫の運動指令を生成する脳領域（側副小葉：LAL）の神経活動と探索行動を同時計測し、ファジィ推論によって関係を解析。匂いの受容頻度に応じて行動の状態遷移確率を変化させていることを明らかにし、モデルの実装によって従来の蛾模倣アルゴリズムより高い探索性能を実現しました。<span style="opacity:.7">［現在進行中］</span></p>
-        <p class="research-text t-en" hidden>By simultaneously recording a male silkmoth's neural activity in the motor-command region (LAL) and its plume-tracing behavior, and analyzing the relationship with fuzzy inference, we found that the moth modulates its state-transition probabilities according to odor-detection frequency. The resulting model improved on the conventional moth-inspired algorithm. <span style="opacity:.7">[Ongoing]</span></p>
-      </div>
-    </div>
-
-    <div class="research-item no-image">
-      <div class="research-icon">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#396c64" stroke-width="1.5"><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
-      </div>
-      <h3 class="research-title">Dynamic Model Identification for Insect Electroantennogram with Printed Electrode</h3>
-      <p class="research-text t-ja">印刷電極を用いて昆虫の触角電位（EAG）を計測し、その動的応答特性をモデル化する研究です。ロボット嗅覚センサとしての昆虫触角の活用に向けた基盤技術に取り組んでいます。</p>
-      <p class="research-text t-en" hidden>We measure insect electroantennograms (EAG) using printed electrodes and model their dynamic response characteristics — foundational work toward using insect antennae as robotic olfactory sensors.</p>
-    </div>
-
+<!-- ============ RESEARCH ============ -->
+<section class="research-clean" id="research">
+  <div class="wrap research-clean-head">
+    <h1 class="t-ja">Research</h1><h1 class="t-en" hidden>Research</h1>
+    <p class="research-clean-intro t-ja">昆虫が持つ優れた匂い源探索能力を構成論的手法で解き明かし、そこで得た知見をロボットに実装することで、生物のように環境に適応するロボットシステムの実現を目指しています。</p>
+    <p class="research-clean-intro t-en" hidden>We use a constructive approach to uncover the remarkable odor-source-tracing abilities of insects, then implement what we learn on robots — working toward robotic systems that adapt to their environment as living organisms do.</p>
   </div>
+
+  <div class="wrap research-category">
+    <h2 class="t-ja">匂い源探索ロボティクス</h2><h2 class="t-en" hidden>Odor Source Localization Robotics</h2>
+    <div class="research-grid">
+
+      <div class="research-card">
+        <div class="research-card-placeholder">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="9" stroke="#4f9187" stroke-width="2.2"/>
+            <circle cx="70" cy="30" r="9" stroke="#4f9187" stroke-width="2.2"/>
+            <circle cx="30" cy="70" r="9" stroke="#4f9187" stroke-width="2.2"/>
+            <circle cx="70" cy="70" r="9" stroke="#4f9187" stroke-width="2.2"/>
+            <line x1="37" y1="37" x2="46" y2="46" stroke="#4f9187" stroke-width="2.2"/>
+            <line x1="63" y1="37" x2="54" y2="46" stroke="#4f9187" stroke-width="2.2"/>
+            <line x1="37" y1="63" x2="46" y2="54" stroke="#4f9187" stroke-width="2.2"/>
+            <line x1="63" y1="63" x2="54" y2="54" stroke="#4f9187" stroke-width="2.2"/>
+            <circle cx="50" cy="50" r="5" fill="#d3a03c"/>
+          </svg>
+        </div>
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">3次元匂い源探索（小型クアッドコプター）</span><span class="t-en" hidden>Palm-Sized Quadcopter for 3D Chemical Plume Tracking</span>
+          </div>
+          <p class="research-card-desc t-ja">手のひらサイズのドローンで、匂い（化学物質）を三次元的に追跡する研究です。災害時の捜索や有害物質の発生源特定への応用を目指しています。</p>
+          <p class="research-card-desc t-en" hidden>A palm-sized quadcopter that tracks chemical plumes in three dimensions — for disaster search-and-rescue and locating hazardous-material sources.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">気流可視化（PIV）によるセンサ配置の最適化</li><li class="t-en" hidden>Sensor placement optimized via particle image velocimetry</li>
+            <li class="t-ja">蛾の探索行動に着想を得た3次元サージキャスティングアルゴリズム</li><li class="t-en" hidden>A 3D surge-casting algorithm inspired by moth plume-tracing</li>
+            <li class="t-ja">風向が大きく変化する環境でも従来手法を上回る性能</li><li class="t-en" hidden>Outperforms conventional methods under shifting winds</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-placeholder">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 35 H60 A8 8 0 1 0 52 27" stroke="#4f9187" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M15 50 H75 A9 9 0 1 1 66 59" stroke="#4f9187" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M15 65 H50 A6 6 0 1 0 44 59" stroke="#4f9187" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">風源定位システム（小型クアッドコプター）</span><span class="t-en" hidden>Wind Source Localization System Based on a Palm-Sized Quadcopter</span>
+          </div>
+          <p class="research-card-desc t-ja">小型ドローンに風向センサを搭載し、風の発生源を特定する研究です。</p>
+          <p class="research-card-desc t-en" hidden>A palm-sized quadcopter equipped with a wind-direction sensor to localize a wind source.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">プロペラ後流の影響を受けないセンサ配置を実験的に特定</li><li class="t-en" hidden>Sensor placement identified experimentally to avoid propeller wake</li>
+            <li class="t-ja">風向・風速情報に基づく走風性アルゴリズム</li><li class="t-en" hidden>Anemotaxis algorithm based on wind direction and speed</li>
+            <li class="t-ja">環境の風の強さによらず風源に到達可能</li><li class="t-en" hidden>Reaches the source regardless of ambient wind strength</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <img class="research-card-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=646x1024:format=png/path/s4f915e2292247085/image/i4a135fb1704b14a8/version/1548160161/image.png" alt="Overview of an autonomous pocket-sized quadcopter system for CPT">
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">ポケットサイズドローンの匂いセンシング</span><span class="t-en" hidden>Odor Sensing Method for a Pocket-Sized Quadcopter</span>
+          </div>
+          <p class="research-card-desc t-ja">ドローン自身のプロペラ後流を利用して匂いを取り込むセンシング手法を設計・検証しました。</p>
+          <p class="research-card-desc t-en" hidden>An intake method that uses the drone's own propeller wake to draw chemical particles onto its sensors.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">プロペラ後流を利用した匂い導気手法</li><li class="t-en" hidden>Intake method using propeller-wake airflow</li>
+            <li class="t-ja">2つのアルコールセンサによる指向性の高い匂い検知</li><li class="t-en" hidden>Directional sensing using two alcohol sensors</li>
+            <li class="t-ja">匂い源の高さによらず70%以上の三次元探索成功率</li><li class="t-en" hidden>Over 70% 3D tracing success across source heights</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-placeholder">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 70 L15 50 L30 50 L30 35 L45 35 L45 55 L60 55 L60 25 L75 25 L75 70 Z" stroke="#4f9187" stroke-width="2.2" stroke-linejoin="round"/>
+            <line x1="15" y1="70" x2="85" y2="70" stroke="#4f9187" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">データ駆動型の匂い源探索行動モデル</span><span class="t-en" hidden>A Data-Driven Framework for Modeling Chemical Plume Tracing Behavior</span>
+          </div>
+          <p class="research-card-desc t-ja">従来のモデルベース手法に代わり、生物の匂い源探索行動をデータから直接学習するフレームワークを提案しました。</p>
+          <p class="research-card-desc t-en" hidden>A data-driven alternative to model-based strategies for reproducing an organism's plume-tracing behavior.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">アルコールセンサアレイとカメラによる行動計測</li><li class="t-en" hidden>Measurement via an alcohol-sensor array and camera tracking</li>
+            <li class="t-ja">ガウス過程回帰による入出力関係のモデル化</li><li class="t-en" hidden>Input–output modeling via Gaussian-process regression</li>
+            <li class="accent t-ja">↓ Experiment Data（Dropbox）</li><li class="accent t-en" hidden>↓ Experiment Data (Dropbox)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <img class="research-card-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=237x1024:format=png/path/s4f915e2292247085/image/id588424142faf995/version/1534732252/image.png" alt="EMG measurement points and behavior estimation results">
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">時変的な蛾模倣アルゴリズム</span><span class="t-en" hidden>Time-Varying Moth-Inspired Algorithm for Chemical Plume Tracing</span>
+          </div>
+          <p class="research-card-desc t-ja">乱流環境下での匂い源探索のため、探索の進行に応じて行動則を変化させるアルゴリズムを構築しました。</p>
+          <p class="research-card-desc t-en" hidden>An algorithm that changes its behavioral rule over the course of a search in turbulent environments.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">飛翔筋筋電位からSVMで行動状態を推定</li><li class="t-en" hidden>Behavioral-state estimation from flight-muscle EMG via SVM</li>
+            <li class="t-ja">探索終盤ほど直進行動を短くする時変的な行動則</li><li class="t-en" hidden>A time-varying rule that shortens straight runs late in a search</li>
+            <li class="t-ja">地上走行ロボットへの実装で到達率が向上</li><li class="t-en" hidden>Higher success rate when implemented on a ground robot</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <img class="research-card-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=641x1024:format=png/path/s4f915e2292247085/image/if8e074f497c69556/version/1616494342/image.png" alt="LAL neural activity and behavior measurement">
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">ファジィ推論による適応的探索行動のモデル化</span><span class="t-en" hidden>Modeling Adaptive Chemical Plume Tracing with Fuzzy Inference</span>
+          </div>
+          <p class="research-card-desc t-ja">脳の運動指令領域（LAL）の神経活動と探索行動を同時計測し、その関係をファジィ推論で解析しました。</p>
+          <p class="research-card-desc t-en" hidden>Simultaneous recording of LAL neural activity and plume-tracing behavior, analyzed with fuzzy inference.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">LAL神経活動と探索行動の同時計測</li><li class="t-en" hidden>Simultaneous measurement of LAL activity and behavior</li>
+            <li class="t-ja">匂い受容頻度に応じた状態遷移確率のモデル化</li><li class="t-en" hidden>State-transition probabilities modeled by odor-detection frequency</li>
+            <li class="t-ja">従来の蛾模倣アルゴリズムより高い探索性能<span style="opacity:.6">［現在進行中］</span></li><li class="t-en" hidden>Outperforms the conventional moth-inspired algorithm <span style="opacity:.6">[Ongoing]</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="wrap research-category">
+    <h2 class="t-ja">昆虫行動計測システム</h2><h2 class="t-en" hidden>Insect Behavior Measurement Systems</h2>
+    <div class="research-grid">
+
+      <div class="research-card">
+        <img class="research-card-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=597x10000:format=png/path/s4f915e2292247085/image/i9fad8a0074694768/version/1637761954/image.png" alt="Multisensory-motor integration in silkmoth olfactory navigation using VR">
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">昆虫用VRによる多感覚統合の解析</span><span class="t-en" hidden>Multisensory-Motor Integration in Olfactory Navigation Using VR</span>
+          </div>
+          <p class="research-card-desc t-ja">昆虫用バーチャルリアリティ（VR）システムを用い、カイコガが匂い・視覚・風向情報をどう統合してメス探索を行うかを調べました。</p>
+          <p class="research-card-desc t-en" hidden>Using a VR system for insects, we investigated how the silkmoth integrates odor, vision, and wind cues during mate search.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">匂い・視覚・風向の情報が一致すると探索成功率が最大</li><li class="t-en" hidden>Search success is highest when all three cues match</li>
+            <li class="t-ja">数理モデル化で従来アルゴリズムを上回る性能を実証</li><li class="t-en" hidden>The resulting model outperforms conventional algorithms</li>
+            <li class="accent t-ja">↓ Behavioral Data（Dropbox・eLife 2021掲載）</li><li class="accent t-en" hidden>↓ Behavioral Data (Dropbox, published in eLife 2021)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <img class="research-card-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=330x1024:format=png/path/s4f915e2292247085/image/i66efb16ff045f04c/version/1534732341/image.png" alt="Animal-in-the-loop system concept">
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">アニマル・インザ・ループシステム</span><span class="t-en" hidden>Animal-in-the-Loop System</span>
+          </div>
+          <p class="research-card-desc t-ja">ロボットの動力学特性を織り込んだ形で、生物の適応行動を同定する実験システムを構築しています。</p>
+          <p class="research-card-desc t-en" hidden>An experimental system that identifies adaptive animal behavior while accounting for the robot's own dynamics.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">ロボットの動力学特性を織り込んだ実験系</li><li class="t-en" hidden>An experimental setup incorporating the robot's dynamics</li>
+            <li class="t-ja">従来の生物規範アルゴリズムの限界を克服</li><li class="t-en" hidden>Addresses a key limitation of conventional bio-inspired algorithms</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <img class="research-card-image" src="https://image.jimcdn.com/app/cms/image/transf/dimension=330x1024:format=png/path/s4f915e2292247085/image/i7f44ce6932195326/version/1534732243/image.png" alt="3-DOF servosphere overview">
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">3自由度サーボスフィア</span><span class="t-en" hidden>3-DOF Servosphere for Untethered Locomotion Measurement</span>
+          </div>
+          <p class="research-card-desc t-ja">昆虫を拘束せずに自然な行動を計測できる、非拘束型の行動計測システムを開発しました。</p>
+          <p class="research-card-desc t-en" hidden>An untethered measurement system that keeps a freely walking insect's position fixed without restraining its body.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">非拘束のまま昆虫の位置・姿勢を一定に保つ計測系</li><li class="t-en" hidden>Keeps position and heading fixed without physical restraint</li>
+            <li class="t-ja">行動と生体信号（筋電位等）の同時計測が可能</li><li class="t-en" hidden>Enables simultaneous measurement of behavior and biosignals</li>
+            <li class="t-ja">カイコガの探索行動と飛翔筋活動の関係を解明</li><li class="t-en" hidden>Revealed the link between plume-tracing behavior and flight-muscle activity</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-placeholder">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 50 Q 20 30, 30 50 T 50 50 T 70 50 T 90 50" stroke="#4f9187" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">ウェアラブル振動センサ</span><span class="t-en" hidden>Wearable Vibration Sensor for Measuring Insect Wing Flapping</span>
+          </div>
+          <p class="research-card-desc t-ja">銀粒子を混ぜたシリコーンフィルムによる柔軟なセンサで、昆虫の羽ばたき周波数を計測しました。</p>
+          <p class="research-card-desc t-en" hidden>A flexible silicone-based film sensor that measures an insect's wingbeat frequency.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">銀粒子入りシリコーンによる柔軟フィルムセンサ</li><li class="t-en" hidden>A flexible film sensor with silver particles in silicone</li>
+            <li class="t-ja">ガ・トンボへの装着による高精度な羽ばたき計測</li><li class="t-en" hidden>High-accuracy measurement on moths and dragonflies</li>
+            <li class="accent t-ja">↓ Source Code（Dropbox）</li><li class="accent t-en" hidden>↓ Source Code (Dropbox)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="research-card">
+        <div class="research-card-placeholder">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 55 L25 55 L32 35 L42 70 L52 45 L60 55 L90 55" stroke="#4f9187" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="research-card-body">
+          <div class="research-card-title">
+            <span class="t-ja">印刷電極による昆虫触角電位計測</span><span class="t-en" hidden>Dynamic Model Identification for Insect Electroantennogram with Printed Electrode</span>
+          </div>
+          <p class="research-card-desc t-ja">印刷電極を用いて昆虫の触角電位（EAG）を計測し、その動的応答特性をモデル化する研究です。</p>
+          <p class="research-card-desc t-en" hidden>Measuring insect electroantennograms with printed electrodes and modeling their dynamic response.</p>
+          <ul class="research-card-bullets">
+            <li class="t-ja">印刷電極による昆虫触角電位（EAG）の計測</li><li class="t-en" hidden>EAG measurement using printed electrodes</li>
+            <li class="t-ja">ロボット嗅覚センサへの応用に向けた基盤技術</li><li class="t-en" hidden>Foundational work toward robotic olfactory sensors</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="height:40px;"></div>
 </section>
 
 <footer>
