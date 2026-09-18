@@ -347,3 +347,12 @@
   }
   .research-card-bullets li.accent{color:var(--teal-deep);}
   .research-card-bullets li.accent::before{color:var(--teal-deep);}
+
+  /* ---------- MAP EMBED ---------- */
+  .map-embed{
+    position:relative; width:100%; padding-bottom:42%; margin-top:8px;
+    border-radius:8px; overflow:hidden; border:1px solid var(--ink-line);
+  }
+  .map-embed iframe{position:absolute; top:0; left:0; width:100%; height:100%; border:0;}
+  @media (max-width:700px){ .map-embed{padding-bottom:75%;} }
+  .map-link{font-size:0.82rem; color:var(--teal); margin-top:10px; display:inline-block;}
