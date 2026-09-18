@@ -79,8 +79,8 @@
 
   /* ---------- HERO ---------- */
   .hero{
-    min-height:100vh; display:flex; align-items:center;
-    padding-top:110px;
+    min-height:auto; display:flex; align-items:center;
+    padding-top:130px; padding-bottom:56px;
     background:
       radial-gradient(circle at 82% 18%, rgba(211,160,60,0.10), transparent 45%),
       radial-gradient(circle at 15% 85%, rgba(79,145,135,0.12), transparent 40%),
@@ -125,9 +125,11 @@
 
   .news-strip{border-top:1px solid var(--ink-line);}
   .news-strip .wrap{padding:26px 28px;}
+  .hero-news{margin-top:34px; padding-top:26px; border-top:1px solid var(--ink-line); max-width:46ch;}
+  .hero-news-label{font-family:var(--sans); font-weight:600; font-size:0.78rem; letter-spacing:0.02em; color:var(--amber); margin-bottom:14px;}
   .news-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;}
-  .news-list li{display:flex; gap:16px; font-size:0.9rem; color:var(--text-light-dim);}
-  .news-list time{font-family:var(--mono); color:var(--amber); flex-shrink:0; width:82px;}
+  .news-list li{display:flex; gap:16px; font-size:0.86rem; color:var(--text-light-dim);}
+  .news-list time{font-family:var(--mono); color:var(--amber); flex-shrink:0; width:76px;}
 
   /* ---------- PAPER SECTIONS ---------- */
   .paper{ background:var(--paper); color:var(--text-dark); }
@@ -172,6 +174,11 @@
   .detail-list{list-style:none; margin:16px 0 4px; padding:0; display:flex; flex-direction:column; gap:10px;}
   .detail-list li{font-size:0.86rem; color:var(--text-light-dim); padding-left:20px; position:relative;}
   .detail-list li::before{content:"—"; position:absolute; left:0; color:var(--amber);}
+  .paper .detail-list li{color:var(--text-dark-dim);}
+  .paper .detail-list li::before{color:var(--amber-deep);}
+  .paper .detail-list li a{color:var(--teal-deep);}
+  .paper summary .count{color:var(--text-dark-dim);}
+  .paper summary{color:var(--text-dark);}
 
   .member-placeholder{
     margin-top:12px; border:1px dashed var(--ink-line); border-radius:8px;
