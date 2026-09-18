@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recruit | Shigaki Lab</title>
+<meta name="description" content="志垣俊介研究室の学生・研究員募集について。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦋%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="lang-ja">
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <img src="assets/logo.png" alt="ASB Lab logo" class="brand-logo">
+      <a href="index.html" style="text-decoration:none; color:inherit;"><span>Shigaki Lab</span></a>
+    </div>
+    <nav class="links" id="navLinks">
+      <a href="index.html" class="t-ja">ホーム</a><a href="index.html" class="t-en" hidden>Home</a>
+      <a href="members.html" class="t-ja">メンバー</a><a href="members.html" class="t-en" hidden>Members</a>
+      <a href="publications.html" class="t-ja">業績</a><a href="publications.html" class="t-en" hidden>Publication</a>
+      <a href="research.html" class="t-ja">研究</a><a href="research.html" class="t-en" hidden>Research</a>
+      <a href="contact.html" class="t-ja">連絡先</a><a href="contact.html" class="t-en" hidden>Contact</a>
+      <a href="recruit.html" class="t-ja nav-active">募集</a><a href="recruit.html" class="t-en nav-active" hidden>Recruit</a>
+      <button id="langToggle">EN</button>
+    </nav>
+    <button id="navToggle" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<!-- ============ RECRUIT ============ -->
+<section id="recruit" style="background:var(--ink-panel); border-top:1px solid var(--ink-line);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow t-ja">RECRUIT</div><div class="eyebrow t-en" hidden>RECRUIT</div>
+      <h2 class="t-ja">募集</h2><h2 class="t-en" hidden>Recruit</h2>
+      <p class="t-ja">昆虫のナビゲーション能力の謎を解き明かし、それをロボットに実装することに興味のある学生・研究員を歓迎します。工学（制御・ロボティクス・センシング）だけでなく、生物学・神経科学のバックグラウンドを持つ方も歓迎します。</p>
+      <p class="t-en" hidden>We welcome students and researchers interested in uncovering the mysteries of insect navigation and implementing them on robots — backgrounds in engineering (control, robotics, sensing) as well as biology and neuroscience are all welcome.</p>
+    </div>
+    <ul class="recruit-points">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <span class="t-ja">生物学と工学の両方に興味がある学部生・大学院生</span>
+        <span class="t-en" hidden>Undergraduate and graduate students interested in both biology and engineering</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <span class="t-ja">昆虫行動計測、ロボット制御、信号処理、機械学習などのスキルを伸ばしたい方</span>
+        <span class="t-en" hidden>Anyone wanting to develop skills in insect behavior measurement, robot control, signal processing, or machine learning</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <span class="t-ja">研究員・特別研究員（PD）としての参加にご興味のある方</span>
+        <span class="t-en" hidden>Postdoctoral researchers interested in joining as a research fellow</span></li>
+    </ul>
+    <a class="cta-btn t-ja" href="mailto:shigaki@nii.ac.jp">まずはメールでご相談ください</a>
+    <a class="cta-btn t-en" hidden href="mailto:shigaki@nii.ac.jp">Get in touch by email</a>
+    <div class="assumption-note">
+      <span class="t-ja">※このセクションは仮の文章です。募集要項の詳細（対象、待遇、応募方法など）に差し替えてご利用ください。</span>
+      <span class="t-en" hidden>* This section is placeholder text — please replace it with your actual recruitment details (eligibility, conditions, how to apply, etc.).</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Shunsuke Shigaki</span>
+    <span class="t-ja">最終更新: 2026年9月</span><span class="t-en" hidden>Last updated: September 2026</span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

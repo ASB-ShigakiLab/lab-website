@@ -3,70 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Members | Shunsuke Shigaki</title>
-<link rel="stylesheet" href="assets/css/style.css">
+<title>Members | Shigaki Lab</title>
+<meta name="description" content="志垣俊介研究室のメンバー紹介。研究代表者 志垣俊介、博士課程学生 関和諒子。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦋%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-<header class="site-header">
-  <div class="site-header-inner">
-    <div class="site-title">Shunsuke Shigaki<small>志垣 俊介</small></div>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="members.html" class="active">Members</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="links.html">Links</a></li>
-      </ul>
+
+<body class="lang-ja">
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <img src="assets/logo.png" alt="ASB Lab logo" class="brand-logo">
+      <a href="index.html" style="text-decoration:none; color:inherit;"><span>Shigaki Lab</span></a>
+    </div>
+    <nav class="links" id="navLinks">
+      <a href="index.html" class="t-ja">ホーム</a><a href="index.html" class="t-en" hidden>Home</a>
+      <a href="members.html" class="t-ja nav-active">メンバー</a><a href="members.html" class="t-en nav-active" hidden>Members</a>
+      <a href="publications.html" class="t-ja">業績</a><a href="publications.html" class="t-en" hidden>Publication</a>
+      <a href="research.html" class="t-ja">研究</a><a href="research.html" class="t-en" hidden>Research</a>
+      <a href="contact.html" class="t-ja">連絡先</a><a href="contact.html" class="t-en" hidden>Contact</a>
+      <a href="recruit.html" class="t-ja">募集</a><a href="recruit.html" class="t-en" hidden>Recruit</a>
+      <button id="langToggle">EN</button>
     </nav>
+    <button id="navToggle" aria-label="menu">☰</button>
   </div>
 </header>
 
-<main>
-  <h1>Members</h1>
+<!-- ============ MEMBERS ============ -->
+<section id="members">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow t-ja">MEMBERS</div><div class="eyebrow t-en" hidden>MEMBERS</div>
+      <h2 class="t-ja">メンバー</h2><h2 class="t-en" hidden>Members</h2>
+    </div>
 
-  <table class="simple">
-    <thead>
-      <tr>
-        <th>役職</th>
-        <th>氏名</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>PI</td>
-        <td>志垣 俊介 (Shunsuke Shigaki)</td>
-      </tr>
-      <tr>
-        <td>D1</td>
-        <td>関和 諒子 (Ryoko Sekiwa)</td>
-      </tr>
-    </tbody>
-  </table>
+    <h4 class="member-group-label t-ja">Staff</h4>
+    <h4 class="member-group-label t-en" hidden>Staff</h4>
 
-  <h2>Research Fields</h2>
-  <div class="field-tags">
-    <span>Bio-Inspired robotics</span>
-    <span>Control engineering</span>
-    <span>Navigation algorithms</span>
-    <span>Robotics olfaction</span>
+    <div class="pi-card">
+      <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=370x10000:format=jpg/path/s4f915e2292247085/image/if1d1376d8edac69d/version/1673166718/image.jpg" alt="Shunsuke Shigaki">
+      <div>
+        <div class="pi-name"><a href="members/shigaki.html" class="member-link">志垣 俊介</a> <span style="font-size:0.9rem; color:var(--text-light-dim);">Shunsuke Shigaki</span></div>
+        <div class="pi-title t-ja">研究代表者 ／ 助教</div>
+        <div class="pi-title t-en" hidden>Principal Investigator / Assistant Professor</div>
+        <p class="pi-bio t-ja">国立情報学研究所 情報学プリンシプル研究系 助教。JSTさきがけ研究員。専門は生物規範ロボティクス、制御工学、ナビゲーションアルゴリズム、ロボット嗅覚。昆虫の匂い源探索行動を構成論的に解き明かし、ロボットへの実装を進めている。</p>
+        <p class="pi-bio t-en" hidden>Assistant Professor, Principles of Informatics Research Division, National Institute of Informatics, and PRESTO Researcher, JST. Works on bio-inspired robotics, control engineering, navigation algorithms, and robotic olfaction, elucidating insect odor-source-tracing behavior through a constructive approach and implementing it on robots.</p>
+        <div class="pi-contact">
+          <a href="mailto:shigaki@nii.ac.jp">shigaki [at] nii.ac.jp</a>
+          <span style="margin:0 8px; color:var(--text-light-dim);">/</span>
+          <a href="members/shigaki.html" class="t-ja">学歴・職歴・受賞歴を見る →</a><a href="members/shigaki.html" class="t-en" hidden>View education, career &amp; awards →</a>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="member-group-label t-ja" style="margin-top:40px;">Students</h4>
+    <h4 class="member-group-label t-en" hidden style="margin-top:40px;">Students</h4>
+    <div class="student-grid">
+      <div class="student-card">
+        <div class="student-avatar">関</div>
+        <div class="student-name"><a href="members/sekiwa.html" class="member-link">関和 諒子</a> <span style="font-size:0.82rem; color:var(--text-light-dim);">Ryoko Sekiwa</span></div>
+        <div class="student-role t-ja">博士課程学生<br>日本学術振興会 特別研究員（DC1）</div>
+        <div class="student-role t-en" hidden>PhD Student<br>JSPS Research Fellowship for Young Scientists (DC1)</div>
+      </div>
+    </div>
+
+    <div class="member-placeholder">
+      <span class="t-ja">その他のメンバー情報は準備中です。参加をご検討の方は「募集」セクションをご覧ください。</span>
+      <span class="t-en" hidden>Additional member profiles will be added soon. If you're interested in joining, see the Recruit section below.</span>
+    </div>
   </div>
+</section>
 
-  <h2>Contact</h2>
-  <div class="card">
-    <p>
-      国立情報学研究所　National Institute of Informatics<br>
-      情報学プリンシプル研究系　Principles of Informatics Research Division
-    </p>
-    <p>Email: shigaki_[at]_nii.ac.jp</p>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <div class="site-footer-inner">
-    <p>&copy; <span id="year"></span> Shunsuke Shigaki</p>
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> Shunsuke Shigaki</span>
+    <span class="t-ja">最終更新: 2026年9月</span><span class="t-en" hidden>Last updated: September 2026</span>
   </div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script src="assets/site.js"></script>
 </body>
 </html>

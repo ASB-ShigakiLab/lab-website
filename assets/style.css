@@ -284,3 +284,9 @@
     background: rgba(211,160,60,0.08); border:1px dashed rgba(211,160,60,0.35);
     border-radius:8px; padding:20px 22px; font-size:0.88rem; color:var(--text-light-dim);
   }
+
+  /* ---------- MULTI-PAGE NAV ---------- */
+  nav.links a.nav-active{color:var(--amber);}
+
+  /* ---------- BRAND LOGO ---------- */
+  .brand-logo{width:32px; height:32px; border-radius:50%; flex-shrink:0; object-fit:cover;}
