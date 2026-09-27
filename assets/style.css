@@ -204,6 +204,12 @@
   .pub-list a{color:var(--teal-deep); text-decoration:underline;}
   .pub-list strong{color:var(--text-dark); font-weight:600;}
   .pub-note{font-size:0.82rem; color:var(--text-dark-dim); margin-top:-30px; margin-bottom:40px;}
+  section.profile-section .pub-list li{color:#f2ede0 !important;}
+  section.profile-section .pub-list a{color:#8fd6cb !important;}
+  section.profile-section .pub-list strong{color:#f2ede0 !important;}
+  section.profile-section .pub-list em{color:#f2ede0 !important;}
+  section.profile-section .cv-list li{color:#f2ede0 !important;}
+  section.profile-section .cv-list .yr{color:#e8dfc8 !important;}
 
   /* ---------- CONTACT / RECRUIT ---------- */
   .split{display:grid; grid-template-columns:1fr 1fr; gap:60px;}
